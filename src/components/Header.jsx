@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -44,20 +44,57 @@ const Header = () => {
             </button>
           </div>
         </div>
+
         <div className="app-header-mobile">
-          <button className="icon-button nav-icons large ">
-            <span class="material-symbols-outlined ">menu</span>
-          </button>
+        {/*   <button
+            id="mobilesidebarbtn"
+            className="icon-button nav-icons large "
+          >
+            <span id="mobilemenubtnimg" class="material-symbols-outlined ">
+              menu
+            </span>
+          </button> */}
+
+          <div className="drawer">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label
+                htmlFor="my-drawer"
+                className="btn btn-primary drawer-button"
+              >
+                 <span id="mobilemenubtnimg" class="material-symbols-outlined ">
+              menu
+            </span>
+              </label>
+            </div>
+            <div className="drawer-side">
+              <label
+                htmlFor="my-drawer"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                {/* Sidebar content here */}
+                <li>
+                  <a>Sidebar Item 1</a>
+                </li>
+                <li>
+                  <a>Sidebar Item 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
         </div>
       </header>
-
-    
     </div>
   );
 };
-export default Header; 
+export default Header;
 
-  {/*   <div className="navbar bg-base-100 mb-3">
+{
+  /*   <div className="navbar bg-base-100 mb-3">
         <div className="flex-1">
         <Link className="text-3xl text-white bg-black" to="">DEMO</Link>
         </div>
@@ -77,7 +114,5 @@ export default Header;
             </li> 
           </ul>
         </div>
-      </div> */}
-
-
-      
+      </div> */
+}
