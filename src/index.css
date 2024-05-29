@@ -868,7 +868,15 @@ a {
   .btn{
     width: 100% !important;
   }
+  .main-dashboard{
+    margin-left: 0px;  
+  }
+  .tiles {
+    width: 100%;
+  }
 }
+
+
 .heading {
   display: flex;
   flex-direction: row;
@@ -952,7 +960,7 @@ span {
   padding: 16px 32px 16px 16px;
   text-align: center;
   font-weight: 800;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   
   width: 141px;
   height: 56px;

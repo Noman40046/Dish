@@ -46,19 +46,9 @@ const Header = () => {
         </div>
 
         <div className="app-header-mobile">
-        {/*   <button
-            id="mobilesidebarbtn"
-            className="icon-button nav-icons large "
-          >
-            <span id="mobilemenubtnimg" class="material-symbols-outlined ">
-              menu
-            </span>
-          </button> */}
-
           <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
-              {/* Page content here */}
               <label
                 htmlFor="my-drawer"
                 className="btn btn-primary drawer-button"
@@ -68,7 +58,7 @@ const Header = () => {
             </span>
               </label>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side z-10">
               <label
                 htmlFor="my-drawer"
                 aria-label="close sidebar"
@@ -77,10 +67,29 @@ const Header = () => {
               <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                 {/* Sidebar content here */}
                 <li>
-                  <a>Sidebar Item 1</a>
+                <NavLink className={({ isActive }) => `${isActive ? "text-[#6777EF]" : "text-black"}`} to="/">
+              Dashboard
+            </NavLink>
                 </li>
                 <li>
-                  <a>Sidebar Item 2</a>
+                <NavLink className={({ isActive }) => `${isActive ? "text-[#6777EF]" : "text-black"}`} to="/clients">
+              Clients
+            </NavLink>
+                </li>
+                <li>
+                <NavLink className={({ isActive }) => `${isActive ? "text-[#6777EF]" : "text-black"}`} to="/userlogin">
+              userlogin
+            </NavLink>
+                </li>
+                <li>
+                <NavLink className={({ isActive }) => `${isActive ? "text-[#6777EF]" : "text-black"}`} to="/payments">
+              All Payments
+            </NavLink>
+                </li>
+                <li>
+                <NavLink className={({ isActive }) => `${isActive ? "text-[#6777EF]" : "text-black"}`} to="/paybill">
+              PayBill
+            </NavLink>
                 </li>
               </ul>
             </div>
