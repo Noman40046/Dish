@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div>
-      <div className="app-body-navigation ps-8">
+    <div className="main-sidear">
+      <div className="app-body-navigation  ps-8">
         <nav className="navigation">
           <a href="#" className="nav-menu">
             <NavLink className={({isActive})=> `${isActive ? "text-[#6777EF]" : "text-black" }`}  to="/">

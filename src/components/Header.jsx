@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -51,7 +51,13 @@ const Header = () => {
         </div>
       </header>
 
-      {/*   <div className="navbar bg-base-100 mb-3">
+    
+    </div>
+  );
+};
+export default Header; 
+
+  {/*   <div className="navbar bg-base-100 mb-3">
         <div className="flex-1">
         <Link className="text-3xl text-white bg-black" to="">DEMO</Link>
         </div>
@@ -72,8 +78,6 @@ const Header = () => {
           </ul>
         </div>
       </div> */}
-    </div>
-  );
-};
 
-export default Header;
+
+      
