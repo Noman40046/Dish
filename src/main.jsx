@@ -6,6 +6,7 @@ import MainLayout from './MainLayout';
 import Home from './components/Home';
 import Clients from './components/Clients';
 import Payments from './components/Payments';
+import Payment from './components/User/Payment';
 
 
 /* const router = createBrowserRouter([
@@ -39,6 +40,8 @@ const router = createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='clients' element={<Clients/>}/>
       <Route path='payments' element={<Payments/>}/>
+      <Route path='paybill' element={<Payment/>}/>
+      
     </Route>
   )
 )
