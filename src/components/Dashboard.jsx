@@ -11,7 +11,7 @@ const Dashboard = () => {
             <div className="service-section-header">
               <div className="search-field">
                 <i className="ph-magnifying-glass"></i>
-                <input type="text" placeholder="Account number" />
+                <input className="rounded-none" type="text" placeholder="Account number" />
               </div>
               <div className="dropdown-field">
                 <select>

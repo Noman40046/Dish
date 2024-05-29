@@ -2,6 +2,8 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+
+
   return (
     <div>
       <header className="app-header bg-[#6777EF] px-4">
@@ -44,9 +46,10 @@ const Header = () => {
             </button>
           </div>
         </div>
+
         <div className="app-header-mobile">
-          <button className="icon-button nav-icons large ">
-            <span class="material-symbols-outlined ">menu</span>
+          <button id="mobilesidebarbtn" className="icon-button nav-icons large ">
+            <span id="mobilemenubtnimg" class="material-symbols-outlined ">menu</span>
           </button>
         </div>
       </header>
@@ -72,6 +75,7 @@ const Header = () => {
           </ul>
         </div>
       </div> */}
+
     </div>
   );
 };
