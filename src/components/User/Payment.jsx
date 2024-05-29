@@ -16,8 +16,11 @@ const Payment = () => {
 
                     </div>
 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name" />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" />
+
+                    <label for="month">Month Of Bill</label>
+                    <input type="month" id="month" name="month" placeholder="Month" />
 
                     <label for="card">Card number</label>
                     <input type="text" minlength="16" maxlength="16" id="card" name="card" placeholder="0000 0000 0000 0000" />
