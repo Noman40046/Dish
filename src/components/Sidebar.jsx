@@ -17,6 +17,17 @@ const Sidebar = () => {
               Clients
             </NavLink>
           </a>
+          <a href="#">     
+            <NavLink className={({isActive})=> `${isActive ? "text-[#6777EF]" : "text-black" }`} to="/paybill">
+              PayBill
+            </NavLink>
+          </a>
+          <a href="#">     
+            <NavLink className={({isActive})=> `${isActive ? "text-[#6777EF]" : "text-black" }`} to="/userlogin">
+              userlogin
+            </NavLink>
+          </a>
+
           
           <a href="#">
             <NavLink className={({isActive})=> `${isActive ? "text-[#6777EF]" : "text-black" }`} to="/payments">
