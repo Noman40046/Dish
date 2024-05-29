@@ -36,17 +36,17 @@ const Header = () => {
             </span>
           </button>
           <div className="app-header-actions-buttons">
-            <button className="icon-button large">
+            <button className="icon-button nav-icons large">
               <span class="material-symbols-outlined">search</span>
             </button>
-            <button className="icon-button large">
+            <button className="icon-button nav-icons large">
               <span class="material-symbols-outlined">notifications</span>
             </button>
           </div>
         </div>
         <div className="app-header-mobile">
-          <button className="icon-button large">
-            <i className="ph-list"></i>
+          <button className="icon-button nav-icons large ">
+            <span class="material-symbols-outlined ">menu</span>
           </button>
         </div>
       </header>

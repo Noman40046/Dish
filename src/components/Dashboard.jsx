@@ -30,8 +30,8 @@ const Dashboard = () => {
                 <div className="tile-header">
                   <span class="material-symbols-outlined text-5xl">bolt</span>
                   <h3>
-                    <span>Electricity</span>
-                    <span>UrkEnergo LTD.</span>
+                    <span>Total Customer</span>
+                    <span>500000</span>
                   </h3>
                 </div>
                 <a href="#">
@@ -47,8 +47,8 @@ const Dashboard = () => {
                     local_fire_department
                   </span>
                   <h3>
-                    <span>Heating Gas</span>
-                    <span>Gazprom UA</span>
+                    <span>Monthly Income</span>
+                    <span>50000</span>
                   </h3>
                 </div>
                 <a href="#">
@@ -60,10 +60,12 @@ const Dashboard = () => {
               </article>
               <article className="tile">
                 <div className="tile-header">
-                  <span class="material-symbols-outlined text-5xl">markdown_copy</span>
+                  <span class="material-symbols-outlined text-5xl">
+                    markdown_copy
+                  </span>
                   <h3>
-                    <span>Tax online</span>
-                    <span>Kharkov 62 str.</span>
+                    <span>Annual Revinue</span>
+                    <span>5000000</span>
                   </h3>
                 </div>
                 <a href="#">
@@ -87,10 +89,14 @@ const Dashboard = () => {
               <div className="filter-options">
                 <p>Filter selected: more than 100 $</p>
                 <button className="icon-button">
-                  <i className="ph-funnel"></i>
+                  <span class="material-symbols-outlined text-black">
+                    chevron_right
+                  </span>
                 </button>
                 <button className="icon-button">
-                  <i className="ph-plus"></i>
+                  <span class="material-symbols-outlined text-black">
+                    chevron_right
+                  </span>
                 </button>
               </div>
             </div>
@@ -221,7 +227,9 @@ const Dashboard = () => {
                   <div>
                     <span>$ 2,110</span>
                     <button className="icon-button">
-                      <i className="ph-caret-right-bold"></i>
+                      <span class="material-symbols-outlined text-black">
+                        chevron_right
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -236,7 +244,9 @@ const Dashboard = () => {
                   <div>
                     <span>$ 5,621</span>
                     <button className="icon-button">
-                      <i className="ph-caret-right-bold"></i>
+                      <span class="material-symbols-outlined text-black">
+                        chevron_right
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -251,7 +261,9 @@ const Dashboard = () => {
                   <div>
                     <span>$ 3,473</span>
                     <button className="icon-button">
-                      <i className="ph-caret-right-bold"></i>
+                      <span class="material-symbols-outlined text-black">
+                        chevron_right
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -265,10 +277,10 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="payment-section-footer">
-              <button className="save-button">Save</button>
-              <button className="settings-button">
-                <i className="ph-gear"></i>
-                <span>More settings</span>
+              <button className="save-button  ">Save</button>
+              <button className="settings-button ">
+                <span class="material-symbols-outlined me-2 text-black">settings</span>
+                <span className="text-black">More settings</span>
               </button>
             </div>
           </section>
