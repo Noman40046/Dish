@@ -3,51 +3,26 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import MainLayout from './MainLayout';
-import Home from './components/Home';
-import Clients from './components/Clients';
-import Payments from './components/Payments';
-import Payment from './components/User/Payment';
 import UserLogin from './components/User/UserLogin';
+import Dashboard from './components/Dashboard';
 
-
-/* const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout/>,
+    element: <MainLayout/> ,
     children: [
       {
         path:"",
-        element: <Home/>
+        element: <UserLogin/> 
       },
       {
-        path:"about",
-        element: <About/>
-      },
-      {
-        path:"gallery",
-        element: <Gallery/>
-      },
-      {
-        path:"contact",
-        element: <Contact/>
+        path:"dashboard",
+        element: <Dashboard/> 
       },
     ]
   },
-]); */
+]); 
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<MainLayout />}>
-      <Route path='' element={<Home />} />
-      <Route path='clients' element={<Clients />} />
-      <Route path='payments' element={<Payments />} />
-      <Route path='paybill' element={<Payment />} />
-      <Route path='userlogin' element={<UserLogin />} />
-
-
-    </Route>
-  )
-)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
