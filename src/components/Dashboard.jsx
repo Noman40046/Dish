@@ -4,51 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 const Dashboard = () => {
   return (
     <div>
-      {/* sidebar------ */}
-      <aside
-        id="default-sidebar"
-        className="fixed bg-white shadow-lg top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
-        aria-label="Sidebar"
-      >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-          <ul className="space-y-2 font-medium">
-          <li>
-              <Link to="/"> 
-              <a href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <span class="material-symbols-outlined">dashboard</span>
-                <span className="flex-1 ms-3 whitespace-nowrap">Dashboard </span></a>
-               </Link>
-            </li>
-          <li>
-              <Link to="/"> 
-              <a href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <span class="material-symbols-outlined">person</span>
-                <span className="flex-1 ms-3 whitespace-nowrap">CLients</span></a>
-               </Link>
-            </li>
-          <li>
-              <Link to="/"> 
-              <a href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <span class="material-symbols-outlined">payments</span>
-                <span className="flex-1 ms-3 whitespace-nowrap">Payments</span></a>
-               </Link>
-            </li>
-
-            <li>
-              <Link to="/"> 
-              <a href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <span class="material-symbols-outlined">logout</span>
-                <span className="flex-1 ms-3 whitespace-nowrap">Sign Out </span></a>
-               </Link>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
       <div className="p-4 sm:ml-64">
         <div className="overview p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
           <div className="grid grid-cols-3 gap-4 mb-4">
@@ -59,7 +14,7 @@ const Dashboard = () => {
                   <span className="material-symbols-outlined text-4xl">
                     groups
                   </span>
-                  <h4 className="text-title-md font-bold text-black dark:text-white text-4xl ">
+                  <h4 className="text-title-md font-bold text-black     text-4xl ">
                     $3.456K
                   </h4>
                   <span className=" font-medium text-2xl">Total views</span>
@@ -74,7 +29,7 @@ const Dashboard = () => {
                   <span className="material-symbols-outlined text-4xl">
                     groups
                   </span>
-                  <h4 className="text-title-md font-bold text-black dark:text-white text-4xl ">
+                  <h4 className="text-title-md font-bold text-black     text-4xl ">
                     $3.456K
                   </h4>
                   <span className=" font-medium text-2xl">Total views</span>
@@ -89,7 +44,7 @@ const Dashboard = () => {
                   <span className="material-symbols-outlined text-4xl">
                     groups
                   </span>
-                  <h4 className="text-title-md font-bold text-black dark:text-white text-4xl ">
+                  <h4 className="text-title-md font-bold text-black     text-4xl ">
                     $3.456K
                   </h4>
                   <span className=" font-medium text-2xl">Total views</span>
@@ -125,7 +80,7 @@ const Dashboard = () => {
                   <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
                     >
                       Apple MacBook Pro 17"
                     </th>
@@ -144,7 +99,7 @@ const Dashboard = () => {
                   <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
                     >
                       Microsoft Surface Pro
                     </th>
@@ -163,7 +118,7 @@ const Dashboard = () => {
                   <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
                     >
                       Magic Mouse 2
                     </th>
@@ -182,7 +137,7 @@ const Dashboard = () => {
                   <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
                     >
                       Google Pixel Phone
                     </th>
@@ -201,7 +156,7 @@ const Dashboard = () => {
                   <tr>
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
                     >
                       Apple Watch 5
                     </th>
@@ -220,7 +175,7 @@ const Dashboard = () => {
                   <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap     "
                     >
                       Apple Watch 5
                     </th>
@@ -239,7 +194,7 @@ const Dashboard = () => {
                   <tr>
                     <th
                       scope="row"
-                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
                     >
                       Apple Watch 5
                     </th>
@@ -276,14 +231,14 @@ const Dashboard = () => {
                     </div>
 
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      <p className="text-sm font-medium text-gray-900 truncate    ">
                         Neil Sims
                       </p>
                       <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                         email@flowbite.com
                       </p>
                     </div>
-                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <div className="inline-flex items-center text-base font-semibold text-gray-900    ">
                       $320
                     </div>
                   </div>
@@ -302,14 +257,14 @@ const Dashboard = () => {
                       </span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      <p className="text-sm font-medium text-gray-900 truncate    ">
                         Bonnie Green
                       </p>
                       <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                         email@flowbite.com
                       </p>
                     </div>
-                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <div className="inline-flex items-center text-base font-semibold text-gray-900    ">
                       $3467
                     </div>
                   </div>
@@ -328,14 +283,14 @@ const Dashboard = () => {
                       </span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      <p className="text-sm font-medium text-gray-900 truncate    ">
                         Michael Gough
                       </p>
                       <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                         email@flowbite.com
                       </p>
                     </div>
-                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <div className="inline-flex items-center text-base font-semibold text-gray-900    ">
                       $67
                     </div>
                   </div>
@@ -354,14 +309,14 @@ const Dashboard = () => {
                       </span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      <p className="text-sm font-medium text-gray-900 truncate    ">
                         Thomas Lean
                       </p>
                       <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                         email@flowbite.com
                       </p>
                     </div>
-                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <div className="inline-flex items-center text-base font-semibold text-gray-900    ">
                       $2367
                     </div>
                   </div>
@@ -380,14 +335,14 @@ const Dashboard = () => {
                       </span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      <p className="text-sm font-medium text-gray-900 truncate    ">
                         Lana Byrd
                       </p>
                       <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                         email@flowbite.com
                       </p>
                     </div>
-                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <div className="inline-flex items-center text-base font-semibold text-gray-900    ">
                       $367
                     </div>
                   </div>

@@ -18,8 +18,17 @@
 }
 
  */
+.w-full{
+  width: 100% !important;
+}
 
 @media(max-width:768px){
+  .main-client ul{
+    width: 100%;
+  }
+  .w-full{
+    width: 100% !important;
+  }
   .clients{
     width: 310px;
   }

@@ -5,6 +5,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import MainLayout from './MainLayout';
 import UserLogin from './components/User/UserLogin';
 import Dashboard from './components/Dashboard';
+import Clients from './components/Clients';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path:"dashboard",
         element: <Dashboard/> 
       },
+      {
+        path:"clients",
+        element: <Clients/> 
+      }
     ]
   },
 ]); 
