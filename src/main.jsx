@@ -6,6 +6,7 @@ import MainLayout from './MainLayout';
 import UserLogin from './components/User/UserLogin';
 import Dashboard from './components/Dashboard';
 import Clients from './components/Clients';
+import Payment from './components/User/Payment';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path:"clients",
         element: <Clients/> 
+      },
+      {
+        path:"payments",
+        element: <Payment/> 
       }
     ]
   },
