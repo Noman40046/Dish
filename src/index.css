@@ -19,5 +19,26 @@
 
  */
 
+@media(max-width:768px){
+  .clients{
+    width: 310px;
+  }
+  .overview h4{
+    font-size: 18px;
+  }
+  .overview span:nth-child(1){
+    font-size: 35px;
+  }
+  .overview span{
+    font-size: 14px;
+  }
+  .summary{
+    justify-content: center;
+  }
+/*   th{
+    padding: 0 !important;
+    font: 10px !important;
+  } */
+}
 
 
