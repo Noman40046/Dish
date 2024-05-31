@@ -1,12 +1,11 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import Sidebar from "./Sidebar";
-import Mainheader from "./Mainheader";
 
-const Header = () => {
+
+const Mainheader = () => {
   return (
     <div>
-     {/*  <div className="navbar  bg-[#6777EF] text-white">
+      <div className="navbar  bg-[#6777EF] text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -34,7 +33,7 @@ const Header = () => {
               className="menu menu-sm text-black  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-              <Link to="">sign in</Link>
+                <Link to="">sign in</Link>
               </li>
               <li>
                 <a>Portfolio</a>
@@ -46,7 +45,7 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">ADMIN DASHBOARD</a>
+          <a className="btn bg-transparent border-none text-white -ml-[500px] text-xl">ADMIN DASHBOARD</a>
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
@@ -85,54 +84,9 @@ const Header = () => {
             </div>
           </button>
         </div>
-      </div> */}
-
-      <Mainheader/>
-      {/* <aside
-        id="default-sidebar"
-        className="fixed bg-white shadow-lg top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
-        aria-label="Sidebar"
-      >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-          <ul className="space-y-2 font-medium">
-            <li>
-              <Link to="/dashboard">
-                <a href="#"
-                  className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   ">
-                  <span class="material-symbols-outlined">dashboard</span>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Dashboard </span></a>
-              </Link>
-            </li>
-            <li>
-              <Link to="/clients">
-                <a href="#"
-                  className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   ">
-                  <span class="material-symbols-outlined">person</span>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Metered Billing</span></a>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <a href="#"
-                  className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   ">
-                  <span class="material-symbols-outlined">payments</span>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Payments</span></a>
-              </Link>
-            </li>
-
-            <li>
-              <Link to="/">
-                <a href="#"
-                  className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   ">
-                  <span class="material-symbols-outlined">logout</span>
-                  <span className="flex-1 ms-3 whitespace-nowrap">Sign Out </span></a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </aside> */}
-      <Sidebar/>
+      </div>
     </div>
   );
 };
-export default Header;
+
+export default Mainheader;

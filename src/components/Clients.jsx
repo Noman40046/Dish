@@ -2,8 +2,9 @@ import React from 'react';
 
 const Clients = () => {
     return (
-        <div className='main-client'>
-            <div className="w-full flex justify-center flex-col clients relative overflow-x-auto  flex-none  mt-10  p-4  sm:rounded-lg items-center ">
+        /*    */
+        <div className='main-client p-4 sm:ml-64'>
+            <div className="w-full  flex justify-center flex-col clients relative overflow-x-auto  flex-none  mt-10  p-4  sm:rounded-lg items-center border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
                 <h1 className="text-xl font-bold mb-4"> All Clients</h1>
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700 w-[50%]">
                     <li className="pb-3 sm:pb-4">
