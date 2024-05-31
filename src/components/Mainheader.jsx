@@ -47,7 +47,7 @@ const Mainheader = () => {
             </ul>
           </div>
         </div>
-        <div className="navbar-center">
+        <div className="navbar-center nav-heading">
           <a className=" bg-transparent  border-none text-white  text-xl">ADMIN DASHBOARD</a>{/*  -ml-[500px]  */}
         </div>
         <div className="navbar-end">

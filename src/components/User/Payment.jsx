@@ -102,7 +102,7 @@ const Payment = () => {
         <section className="border">
 
           <div
-            className=" invoice-table-row invoice-table-header bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3 text-sm font-semibold  text-gray-600">
+            className="  text-sm invoice-table-row invoice-table-header bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3  font-semibold  text-gray-600">
             <div className="text-left">Invoice</div>
             <div className="text-left">Client name</div>
             <div className="text-center">Date</div>

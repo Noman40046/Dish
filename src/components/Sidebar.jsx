@@ -7,10 +7,10 @@ const Sidebar = () => {
     <div>
       <aside
         id="default-sidebar "
-        className="sidebar-container mt-20 fixed bg-white shadow-lg top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className="sidebar-container mt-16 fixed bg-white border-r top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full px-3  overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="h-full px-3  overflow-y-auto   ">
           <ul className="space-y-2 font-medium">
             <li>
               <Link to="/dashboard">

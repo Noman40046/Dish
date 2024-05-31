@@ -13,6 +13,10 @@
   background-color: #6777EF !important;
 }
 @media(max-width:768px) {
+  .nav-heading a{
+    font-size: 14px !important;
+    font-weight: 600;
+  }
   .menu-dropdown {
     display: block;
   }
@@ -43,6 +47,11 @@
 
   .summary {
     justify-content: center;
+  }
+  .invoice-table-row{
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    gap: 10px !important;
   }
 
 }
