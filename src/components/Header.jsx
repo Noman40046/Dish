@@ -5,7 +5,7 @@ import Mainheader from "./Mainheader";
 
 const Header = () => {
   return (
-    <div>
+    <div className="sticky top-0 z-40">
      {/*  <div className="navbar  bg-[#6777EF] text-white">
         <div className="navbar-start">
           <div className="dropdown">

@@ -4,10 +4,10 @@ import { Link, NavLink } from "react-router-dom";
 
 const Mainheader = () => {
   return (
-    <div>
+    <div className="header-container ">
       <div className="navbar  bg-[#6777EF] text-white">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown menu-dropdown">
             <div
               tabIndex={0}
               role="button"

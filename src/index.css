@@ -2,52 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #ffffff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
- */
-.w-full{
+.w-full {
   width: 100% !important;
 }
 
-@media(max-width:768px){
-  .main-client ul{
-    width: 100%;
-  }
-  .w-full{
-    width: 100% !important;
-  }
-  .clients{
-    width: 310px;
-  }
-  .overview h4{
-    font-size: 18px;
-  }
-  .overview span:nth-child(1){
-    font-size: 35px;
-  }
-  .overview span{
-    font-size: 14px;
-  }
-  .summary{
-    justify-content: center;
-  }
-/*   th{
-    padding: 0 !important;
-    font: 10px !important;
-  } */
+.menu-dropdown {
+  display: none;
 }
 
+@media(max-width:768px) {
+  .menu-dropdown {
+    display: block;
+  }
 
+  .main-client ul {
+    width: 100%;
+  }
+
+  .w-full {
+    width: 100% !important;
+  }
+
+  .clients {
+    width: 310px;
+  }
+
+  .overview h4 {
+    font-size: 18px;
+  }
+
+  .overview span:nth-child(1) {
+    font-size: 35px;
+  }
+
+  .overview span {
+    font-size: 14px;
+  }
+
+  .summary {
+    justify-content: center;
+  }
+
+}
