@@ -33,19 +33,22 @@ const Mainheader = () => {
               className="menu menu-sm text-black  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to="">sign in</Link>
+                <Link to="/dashboard">Dashboard</Link>
               </li>
               <li>
-                <a>Portfolio</a>
+              <Link to="/clients">Metered Billing</Link>
               </li>
               <li>
-                <a>About</a>
+              <Link to="/payments">Payments</Link>
+              </li>
+              <li>
+              <Link to="/">Sign Out</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn bg-transparent border-none text-white -ml-[500px] text-xl">ADMIN DASHBOARD</a>
+          <a className=" bg-transparent  border-none text-white  text-xl">ADMIN DASHBOARD</a>{/*  -ml-[500px]  */}
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">

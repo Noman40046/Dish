@@ -39,7 +39,7 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="payments">
                 <a
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "
@@ -60,7 +60,7 @@ const Sidebar = () => {
                 >
                   <span class="material-symbols-outlined">logout</span>
                   <span className="flex-1 ms-3 whitespace-nowrap">
-                    Sign Out{" "}
+                    Sign Out
                   </span>
                 </a>
               </Link>
