@@ -53,12 +53,14 @@ const Payment = () => {
             <div className="flex-1  text-left">Status</div>
           </div>
           <div className="bg-white mt-5 rounded-xl text-sm  text-black divide-y divide-indigo-50 overflow-x-auto  shadow">
-            <div className="invoice-table-row flex items-center gap-x-3 px-10 py-4">
+            <div className="invoice-table-row flex items-center  gap-x-3 px-10 py-4">
+
               <div className="text-left ">12</div>
               <div className="text-left">John Doe</div>
               <div className="text-left">2019/11/20</div>
               <div className="text-left">2019/12/20</div>
               <div className="text-left">$10.00</div>
+
               <div className="text-right ">
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button"><span className="px-4 py-1 rounded-lg bg-rose-400  text-white">Pending</span></div>
@@ -68,7 +70,9 @@ const Payment = () => {
                   </ul>
                 </div>
               </div>
+
             </div>
+
 
             <div className="invoice-table-row flex items-center gap-x-3 px-10 py-4 bg-indigo-50">
               <div className="text-left">13</div>

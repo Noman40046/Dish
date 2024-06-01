@@ -100,7 +100,7 @@ const Dashboard = () => {
           <div className=" flex justify-between w-full flex-wrap">
             <div className=" p-4 font-bold text-lg text-black">All User</div>
             <div className=" p-4 font-bold text-lg text-black">
-              <div className="flex items-center gap-2  text-black text-sm flex-wrap font-semibold">
+              <div className="flex items-center gap-2  text-black text-sm  font-semibold">
 
                 <div>
                   <input
