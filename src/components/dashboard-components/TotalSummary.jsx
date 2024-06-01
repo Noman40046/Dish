@@ -3,9 +3,9 @@ import React from 'react';
 const TotalSummary = () => {
     return (
         
-             <div className="product-summary relative overflow-x-auto  flex-1  sm:rounded-lg  shadow-lg">
-              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead className="text-xs text-gray-700 uppercase dark:bg-gray-700  dark:text-gray-400">
+             <div className="product-summary relative overflow-x-auto  flex-1  sm:rounded-lg  border">
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500   ">
+                <thead className="text-xs text-gray-700 uppercase       ">
                   <tr>
                     <th scope="col" className="px-6 py-3">
                       Product name
@@ -26,7 +26,7 @@ const TotalSummary = () => {
                 </thead>
 
                 <tbody>
-                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                  <tr className="odd:bg-white odd:   even:bg-gray-50    border-b ">
                     <th
                       scope="row"
                       className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
@@ -39,13 +39,13 @@ const TotalSummary = () => {
                     <td className="px-6 py-4">
                       <a
                         href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        className="font-medium text-blue-600    hover:underline"
                       >
                         Edit
                       </a>
                     </td>
                   </tr>
-                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                  <tr className="odd:bg-white odd:   even:bg-gray-50    border-b ">
                     <th
                       scope="row"
                       className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
@@ -58,13 +58,13 @@ const TotalSummary = () => {
                     <td className="px-6 py-4">
                       <a
                         href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        className="font-medium text-blue-600  hover:underline"
                       >
                         Edit
                       </a>
                     </td>
                   </tr>
-                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                  <tr className="odd:bg-white odd: even:bg-gray-50    border-b   ">
                     <th
                       scope="row"
                       className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
@@ -77,13 +77,13 @@ const TotalSummary = () => {
                     <td className="px-6 py-4">
                       <a
                         href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        className="font-medium text-blue-600    hover:underline"
                       >
                         Edit
                       </a>
                     </td>
                   </tr>
-                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                  <tr className="odd:bg-white odd:   even:bg-gray-50    border-b   ">
                     <th
                       scope="row"
                       className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    "
@@ -96,7 +96,7 @@ const TotalSummary = () => {
                     <td className="px-6 py-4">
                       <a
                         href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        className="font-medium text-blue-600    hover:underline"
                       >
                         Edit
                       </a>
@@ -115,13 +115,13 @@ const TotalSummary = () => {
                     <td className="px-6 py-4">
                       <a
                         href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        className="font-medium text-blue-600    hover:underline"
                       >
                         Edit
                       </a>
                     </td>
                   </tr>
-                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                  <tr className="odd:bg-white odd:   even:bg-gray-50    border-b   ">
                     <th
                       scope="row"
                       className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap     "
@@ -134,7 +134,7 @@ const TotalSummary = () => {
                     <td className="px-6 py-4">
                       <a
                         href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        className="font-medium text-blue-600    hover:underline"
                       >
                         Edit
                       </a>
@@ -153,7 +153,7 @@ const TotalSummary = () => {
                     <td className="px-6 py-4">
                       <a
                         href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        className="font-medium text-blue-600    hover:underline"
                       >
                         Edit
                       </a>

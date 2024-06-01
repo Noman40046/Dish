@@ -3,11 +3,11 @@ import React from "react";
 const Payment = () => {
   return (
     <div className="p-4 sm:ml-64" >
-      <main className=" w-full py-10 px-3 sm:px-10">
+      <main className=" w-full px-3 sm:px-10">
 
         <section>
           <div
-            className=" mb-4 mt-12 border rounded-xl px-5 sm:px-10  pt-8 pb-4 relative xl:bg-[url('../images/invoice.png')] bg-no-repeat bg-right bg-contain ">
+            className=" mb-4 mt-4 border rounded-xl px-5 sm:px-10  pt-8 pb-4 relative xl:bg-[url('../images/invoice.png')] bg-no-repeat bg-right bg-contain ">
             <div className=" font-semibold text-lg text-black">All Invoices</div>
 
 
@@ -92,31 +92,31 @@ const Payment = () => {
 
 
 
-        <section className="border">
+        <section className="border rounded-lg">
           <div
-<<<<<<< HEAD
-            className="  text-sm invoice-table-row invoice-table-header bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3  font-semibold  text-gray-600">
-=======
-            className=" invoice-table-row invoice-table-header bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3 text-sm font-semibold  text-black">
->>>>>>> 6013937011956450db8d1553686ab4d0764fb3f0
+            className=" overflow-visible text-sm invoice-table-row  invoice-table-header bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3  font-semibold  text-gray-600">
             <div className="text-left">Invoice</div>
             <div className="text-left">Client name</div>
             <div className="text-center">Date</div>
             <div className="text-center ">Due date</div>
-            <div className="text-right">Total</div>
+            <div className="text-center">Total</div>
             <div className="flex-1  text-center">Status</div>
           </div>
-          <div
-            className="bg-white mt-5 rounded-xl text-sm  text-black divide-y divide-indigo-50 overflow-x-auto  shadow">
-
+          <div className="bg-white mt-5 rounded-xl text-sm  text-black divide-y divide-indigo-50 overflow-x-auto  shadow">
             <div className="invoice-table-row flex items-center gap-x-3 px-10 py-4">
               <div className="text-left ">12</div>
               <div className="text-left">John Doe</div>
               <div className="text-center">2019/11/20</div>
               <div className="text-center">2019/12/20</div>
-              <div className="text-right">$10.00</div>
-              <div className="text-center ">
-                <span className="px-4 py-1 rounded-lg bg-rose-400  text-white">Draft</span>
+              <div className="text-center">$10.00</div>
+              <div className="text-right ">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"><span className="px-4 py-1 rounded-lg bg-rose-400  text-white">Pending</span></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>Approve</a></li>
+                    <li><a>Decline</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -125,9 +125,16 @@ const Payment = () => {
               <div className="text-left">Thomas Bride</div>
               <div className="text-center">2019/11/20</div>
               <div className="text-center">2019/12/20</div>
-              <div className="text-right">$670.00</div>
-              <div className="text-center ">
-                <span className="px-4 py-1 rounded-lg bg-indigo-400  text-white">Paid</span>
+              <div className="text-center">$670.00</div>
+              <div className="text-right ">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"><span className="px-4 py-1 rounded-lg bg-indigo-400  text-white">Accepted</span></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>Approve</a></li>
+                    <li><a>Decline</a></li>
+                  </ul>
+                </div>
+
               </div>
             </div>
 
@@ -136,9 +143,16 @@ const Payment = () => {
               <div className="text-left">Ellen Bean</div>
               <div className="text-center">2019/11/20</div>
               <div className="text-center">2019/12/20</div>
-              <div className="text-right">$1032.00</div>
-              <div className="text-center ">
-                <span className="px-4 py-1 rounded-lg bg-rose-400  text-white">Draft</span>
+              <div className="text-center">$1032.00</div>
+              <div className="text-right ">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"><span className="px-4 py-1 rounded-lg bg-rose-400  text-white">Pending</span></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>Approve</a></li>
+                    <li><a>Decline</a></li>
+                  </ul>
+                </div>
+
               </div>
             </div>
 
@@ -147,9 +161,15 @@ const Payment = () => {
               <div className="text-left">Jack Sanders</div>
               <div className="text-center">2020/11/20</div>
               <div className="text-center">2020/12/20</div>
-              <div className="text-right">$590.00</div>
-              <div className="text-center ">
-                <span className="px-4 py-1 rounded-lg bg-indigo-400  text-white">Paid</span>
+              <div className="text-center">$590.00</div>
+              <div className="text-right ">
+              <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"><span className="px-4 py-1 rounded-lg bg-indigo-400  text-white">Accepted</span></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>Approve</a></li>
+                    <li><a>Decline</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -158,9 +178,15 @@ const Payment = () => {
               <div className="text-left">Leslie Ive</div>
               <div className="text-center">2020/11/20</div>
               <div className="text-center">2020/12/20</div>
-              <div className="text-right">$230.00</div>
-              <div className="text-center ">
-                <span className="px-4 py-1 rounded-lg bg-rose-400  text-white">Draft</span>
+              <div className="text-center">$230.00</div>
+              <div className="text-right ">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"><span className="px-4 py-1 rounded-lg bg-rose-400  text-white">Pending</span></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>Approve</a></li>
+                    <li><a>Decline</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 

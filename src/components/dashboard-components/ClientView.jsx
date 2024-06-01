@@ -3,7 +3,7 @@ import React from "react";
 const ClientView = () => {
   return (
     <div>
-      <div className=" clients relative overflow-x-auto  flex-none w-96   p-4  sm:rounded-lg  shadow-lg">
+      <div className=" clients relative overflow-x-auto  flex-none w-96   p-4  sm:rounded-lg border">
         <h1 className="text-xl font-bold mb-4"> All Clients</h1>
         <ul className="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
           <li className="pb-3 sm:pb-4">

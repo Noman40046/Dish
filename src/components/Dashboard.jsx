@@ -17,7 +17,9 @@ const Dashboard = () => {
             <MonthyIncome />
             <AnnualRevinue />
           </div>
-
+          <div>
+            
+          </div>
           <div className="summary flex items-start justify-between flex-wrap  mb-10 rounded gap-5 mt-7  dark:bg-gray-800 ">
             <TotalSummary />
             <ClientView/>

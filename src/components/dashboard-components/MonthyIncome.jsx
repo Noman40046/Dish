@@ -3,7 +3,7 @@ import React from 'react';
 const MonthyIncome = () => {
     return (
         <div>
-            <div className="flex items-center justify-start shadow-lg rounded  dark:bg-gray-800 after: p-4">
+            <div className="flex items-center justify-start border rounded  dark:bg-gray-800 after: p-4">
               <div className="mt-4 flex  justify-between items-center ">
                 <div>
                   <span class="material-symbols-outlined text-4xl">
