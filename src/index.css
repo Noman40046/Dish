@@ -15,7 +15,10 @@
   display: none;
 }
 .signinbtn{
-  background-color: #6777EF !important;
+  background-color: #000000 !important;
+}
+.signinbtn:hover{
+  background-color: #272727 !important;
 }
 .client-table-row{
   justify-content: space-around !important;
@@ -29,6 +32,19 @@
   z-index: 999;
 }
 @media(max-width:768px) {
+  .user-update-flexbox{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .userupdateprofile{
+    order: 1;
+    width: 100% !important;
+  }
+  .userupdateform{
+    order: 2;
+    width: 100% !important;
+    padding: 0 !important;
+  }
   .dashboard-card{
     width: 100% !important;
   }

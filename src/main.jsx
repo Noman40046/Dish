@@ -8,6 +8,8 @@ import Dashboard from './components/Dashboard';
 import Clients from './components/Clients';
 import Payment from './components/User/Payment';
 import Message from './components/User/Message';
+import UserProfile from './components/User/UserProfile';
+import UserUpdate from './components/User/UserUpdate';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path:"payments",
         element: <Payment/> 
+      },
+      {
+        path:"edit",
+        element: <UserUpdate/>
+      },
+      {
+        path:"userprofile",
+        element: <UserProfile/> 
       }
     ]
   },

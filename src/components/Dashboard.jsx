@@ -130,7 +130,8 @@ const Dashboard = () => {
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
-                    <li><a>View</a></li>
+                    <li><Link to="/userprofile">View</Link></li>
+                    <li><Link to="/edit">Edit</Link></li>
                     <li><a>Delete</a></li>
                   </ul>
                 </div>
@@ -147,7 +148,8 @@ const Dashboard = () => {
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
-                    <li><a>View</a></li>
+                    <li><Link to="/userprofile">View</Link></li>
+                    <li><Link to="/edit">Edit</Link></li>
                     <li><a>Delete</a></li>
                   </ul>
                 </div>
@@ -163,7 +165,8 @@ const Dashboard = () => {
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
-                    <li><a>View</a></li>
+                    <li><Link to="/userprofile">View</Link></li>
+                    <li><Link to="/edit">Edit</Link></li>
                     <li><a>Delete</a></li>
                   </ul>
                 </div>
@@ -179,7 +182,8 @@ const Dashboard = () => {
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
-                    <li><a>View</a></li>
+                    <li><Link to="/userprofile">View</Link></li>
+                    <li><Link to="/edit">Edit</Link></li>
                     <li><a>Delete</a></li>
                   </ul>
                 </div>
@@ -195,7 +199,8 @@ const Dashboard = () => {
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
-                    <li><a>View</a></li>
+                    <li><Link to="/userprofile">View</Link></li>
+                    <li><Link to="/edit">Edit</Link></li>
                     <li><a>Delete</a></li>
                   </ul>
                 </div>
