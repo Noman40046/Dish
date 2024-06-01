@@ -43,8 +43,8 @@ const Clients = () => {
                         <div className="text-left">Id</div>
                         <div className="text-left">User name</div>
                         <div className="text-left">Contact</div>
-                        <div className="text-left">Monthly charge</div>
-
+                        <div className="text-left">charge</div>
+                        <div className="text-left">Action</div>
                     </div>
                     <div className="bg-white mt-5 rounded-xl text-sm  text-black divide-y divide-indigo-50 overflow-x-auto  shadow">
                         <div className="client-table-row flex items-start justify-start gap-x-3 px-10 py-4">
@@ -52,6 +52,7 @@ const Clients = () => {
                             <div className="text-left">John Doe</div>
                             <div className="text-left">01518999578</div>
                             <div className="text-left">500৳</div>
+                            <div className="text-left cursor-pointer  hover:text-blue-900">Edit</div>
 
                         </div>
 
@@ -60,6 +61,7 @@ const Clients = () => {
                             <div className="text-left">Thomas Bride</div>
                             <div className="text-left">01518999578</div>
                             <div className="text-left"> 500৳</div>
+                            <div className="text-left cursor-pointer  hover:text-blue-900">Edit</div>
 
                         </div>
 
@@ -68,6 +70,7 @@ const Clients = () => {
                             <div className="text-left">Ellen Bean</div>
                             <div className="text-left">01518999578</div>
                             <div className="text-left"> 500৳</div>
+                            <div className="text-left cursor-pointer  hover:text-blue-900">Edit</div>
 
                         </div>
 
@@ -76,6 +79,7 @@ const Clients = () => {
                             <div className="text-left">Jack Sanders</div>
                             <div className="text-left">01518999578</div>
                             <div className="text-left"> 500৳</div>
+                            <div className="text-left cursor-pointer  hover:text-blue-900">Edit</div>
 
                         </div>
 
@@ -84,6 +88,7 @@ const Clients = () => {
                             <div className="text-left">Leslie Ive</div>
                             <div className="text-left">01518999578</div>
                             <div className="text-left">500৳</div>
+                            <div className="text-left cursor-pointer  hover:text-blue-900">Edit</div>
 
                         </div>
 

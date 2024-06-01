@@ -117,14 +117,24 @@ const Dashboard = () => {
             <div className="text-left">User name</div>
             <div className="text-left">Contact</div>
             <div className="text-left">charge</div>
+            <div className="text-left">Action</div>
 
           </div>
-          <div className="bg-white mt-5 rounded-xl text-sm  text-black divide-y divide-indigo-50 overflow-x-auto  shadow">
+          <div className="bg-white mt-5 rounded-xl text-sm   text-black divide-y divide-indigo-50 overflow-x-auto  shadow">
             <div className="client-table-row flex items-start justify-start gap-x-3 px-10 py-4">
               <div className="text-left ">12</div>
               <div className="text-left">John Doe</div>
               <div className="text-left">01518999578</div>
               <div className="text-left">500৳</div>
+              <div className="text-left">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>View</a></li>
+                    <li><a>Delete</a></li>
+                  </ul>
+                </div>
+              </div>
 
             </div>
 
@@ -133,7 +143,15 @@ const Dashboard = () => {
               <div className="text-left">Thomas Bride</div>
               <div className="text-left">01518999578</div>
               <div className="text-left"> 500৳</div>
-
+              <div className="text-left">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>View</a></li>
+                    <li><a>Delete</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <div className="client-table-row flex items-start justify-start gap-x-3 px-10 py-4">
@@ -141,7 +159,15 @@ const Dashboard = () => {
               <div className="text-left">Ellen Bean</div>
               <div className="text-left">01518999578</div>
               <div className="text-left"> 500৳</div>
-
+              <div className="text-left">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>View</a></li>
+                    <li><a>Delete</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <div className="client-table-row flex items-start justify-start gap-x-3 px-10 py-4  ">
@@ -149,7 +175,15 @@ const Dashboard = () => {
               <div className="text-left">Jack Sanders</div>
               <div className="text-left">01518999578</div>
               <div className="text-left"> 500৳</div>
-
+              <div className="text-left">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>View</a></li>
+                    <li><a>Delete</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <div className="client-table-row flex items-start justify-start gap-x-3 px-10 py-4">
@@ -157,7 +191,15 @@ const Dashboard = () => {
               <div className="text-left">Leslie Ive</div>
               <div className="text-left">01518999578</div>
               <div className="text-left">500৳</div>
-
+              <div className="text-left">
+                <div className="dropdown dropdown-end">
+                  <div tabIndex={0} role="button"> <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">....</div></div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box ">
+                    <li><a>View</a></li>
+                    <li><a>Delete</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
 

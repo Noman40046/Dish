@@ -8,7 +8,9 @@
 .w-full {
   width: 100% !important;
 }
-
+.mb-4 {
+  margin-bottom: 16px !important;
+}
 .menu-dropdown {
   display: none;
 }
