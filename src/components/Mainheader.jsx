@@ -90,7 +90,6 @@ const Mainheader = () => {
               <span className="badge badge-xs badge-primary indicator-item"></span>
             </div>
           </button>
-          <Link to="/userprofile"><span class="material-symbols-outlined bg-gray-400 p-1 rounded-full">person</span></Link>
         </div>
       </div>
     </div>
