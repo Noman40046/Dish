@@ -7,6 +7,7 @@ import UserLogin from './components/User/UserLogin';
 import Dashboard from './components/Dashboard';
 import Clients from './components/Clients';
 import Payment from './components/User/Payment';
+import Message from './components/User/Message';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path:"clients",
         element: <Clients/> 
+      },
+      {
+        path:"messege",
+        element: <Message/>
       },
       {
         path:"payments",

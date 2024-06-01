@@ -19,12 +19,21 @@
   justify-content: space-around !important;
   text-align: left !important;
 }
-
+.client-table-row .text-left{
+  width: 100% !important;
+}
+.navbar{
+  z-index: 999;
+}
 @media(max-width:768px) {
+  .dashboard-card{
+    width: 100% !important;
+  }
   .client-table-row{
     font-size: 10px !important;
     font-weight: 700 !important;
     gap: 10px !important;
+    width: 100% !important;
   }
   .nav-heading a{
     font-size: 14px !important;
@@ -63,6 +72,7 @@
   }
   .invoice-table-row{
     font-size: 10px !important;
+    justify-content: space-around !important;
     font-weight: 700 !important;
     gap: 10px !important;
     padding-right: 300px !important;

@@ -7,10 +7,10 @@ const Sidebar = () => {
     <div>
       <aside
         id="default-sidebar "
-        className="sidebar-container mt-16 pt-8  fixed bg-white border-r top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className="sidebar-container mt-[65px] fixed bg-[#FBFBFB] border-r top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full px-3  overflow-y-auto   ">
+        <div className="h-full px-3  overflow-y-auto  border-t pt-6 ">
           <ul className="space-y-2 font-medium">
             <li>
               <Link to="/dashboard">
@@ -47,6 +47,19 @@ const Sidebar = () => {
                   <span class="material-symbols-outlined">payments</span>
                   <span className="flex-1 ms-3 whitespace-nowrap">
                     Payments
+                  </span>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link to="messege">
+                <a
+                  href="#"
+                  className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "
+                >
+                  <span class="material-symbols-outlined">chat</span>
+                  <span className="flex-1 ms-3 whitespace-nowrap">
+                    Send Messege
                   </span>
                 </a>
               </Link>

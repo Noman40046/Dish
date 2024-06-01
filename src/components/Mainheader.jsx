@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 const Mainheader = () => {
   return (
     <div className="header-container ">
-      <div className="navbar  bg-[#6777EF] text-white">
+      <div className="navbar  bg-[#FBFBFB]  border text-black">
         <div className="navbar-start">
           <div className="dropdown menu-dropdown">
             <div
@@ -36,19 +36,23 @@ const Mainheader = () => {
                 <Link to="/dashboard">Dashboard</Link>
               </li>
               <li>
-              <Link to="/clients">Metered Billing</Link>
+                <Link to="/clients">Metered Billing</Link>
               </li>
               <li>
-              <Link to="/payments">Payments</Link>
+                <Link to="/payments">Payments</Link>
               </li>
               <li>
-              <Link to="/">Sign Out</Link>
+                <Link to="/messege">Send Messege</Link>
+              </li>
+              <li>
+                <Link to="/">Sign Out</Link>
               </li>
             </ul>
           </div>
+          <div className="logo pl-10"><img className="w-8" src="../../public/logo.png" alt="" /></div>
         </div>
         <div className="navbar-center nav-heading">
-          <a className=" bg-transparent  border-none text-white  text-xl">ADMIN DASHBOARD</a>{/*  -ml-[500px]  */}
+          <a className=" bg-transparent  border-none text-black  text-xl">ADMIN DASHBOARD</a>{/*  -ml-[500px]  */}
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
