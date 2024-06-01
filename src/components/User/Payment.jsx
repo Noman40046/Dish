@@ -8,14 +8,11 @@ const Payment = () => {
         <section>
           <div
             className=" mb-4 mt-12 border rounded-xl px-5 sm:px-10  pt-8 pb-4 relative xl:bg-[url('../images/invoice.png')] bg-no-repeat bg-right bg-contain ">
-            <div className=" font-semibold text-lg">All Invoices</div>
+            <div className=" font-semibold text-lg text-black">All Invoices</div>
 
 
             <div className="mt-6 grid grid-cols-1 xs:grid-cols-2 gap-y-6  gap-x-6 md:flex md:space-x-6 md:gap-x-0 ">
-
-
-
-              <div className="flex flex-col  md:w-40  text-gray-600 text-sm space-y-2 font-semibold">
+              <div className="flex flex-col   md:w-40  text-black text-sm space-y-2 font-semibold">
                 <label for="client">Begin Date</label>
                 <div className="inline-flex relative">
                   <input
@@ -34,7 +31,7 @@ const Payment = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col md:w-40  text-gray-600 text-sm space-y-2 font-semibold">
+              <div className="flex flex-col md:w-40  text-black text-sm space-y-2 font-semibold">
                 <label for="client">End Date</label>
                 <div className="inline-flex relative">
                   <input
@@ -54,7 +51,7 @@ const Payment = () => {
               </div>
 
 
-              <div className="flex flex-col md:w-40  text-gray-600 text-sm space-y-2 font-semibold">
+              <div className="flex flex-col md:w-40  text-black text-sm space-y-2 font-semibold">
                 <label for="client">Status</label>
                 <div className="inline-flex relative">
                   <select
@@ -72,7 +69,7 @@ const Payment = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col md:w-40 text-gray-600 text-sm space-y-2 font-semibold">
+              <div className="flex flex-col md:w-40 text-black text-sm space-y-2 font-semibold">
                 <label for="client">Client</label>
                 <div className="inline-flex relative">
                   <select
@@ -89,20 +86,15 @@ const Payment = () => {
                   </span>
                 </div>
               </div>
-
             </div>
-
-
           </div>
-
         </section>
 
 
 
         <section className="border">
-
           <div
-            className=" invoice-table-row invoice-table-header bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3 text-sm font-semibold  text-gray-600">
+            className=" invoice-table-row invoice-table-header bg-white mt-10 rounded-xl px-10  py-4 flex items-center gap-x-3 text-sm font-semibold  text-black">
             <div className="text-left">Invoice</div>
             <div className="text-left">Client name</div>
             <div className="text-center">Date</div>
@@ -111,7 +103,7 @@ const Payment = () => {
             <div className="flex-1  text-center">Status</div>
           </div>
           <div
-            className="bg-white mt-5 rounded-xl text-sm  text-gray-500 divide-y divide-indigo-50 overflow-x-auto  shadow">
+            className="bg-white mt-5 rounded-xl text-sm  text-black divide-y divide-indigo-50 overflow-x-auto  shadow">
 
             <div className="invoice-table-row flex items-center gap-x-3 px-10 py-4">
               <div className="text-left ">12</div>
