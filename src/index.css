@@ -32,6 +32,9 @@
   z-index: 999;
 }
 @media(max-width:768px) {
+  .paument-search{
+    flex-wrap: wrap;
+  }
   .user-update-flexbox{
     flex-wrap: wrap;
     gap: 20px;

@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import MainLayout from './MainLayout';
-import UserLogin from './components/User/UserLogin';
+import UserLogin from './pages/UserLogin';
 import Dashboard from './pages/Dashboard';
-import UserProfile from './components/User/UserProfile';
-import UserUpdate from './components/User/UserUpdate';
 import { Toaster } from 'react-hot-toast';
 import Payment from './pages/Payment';
-import Bills from './components/Bills';
 import Message from './pages/Message';
+import UserUpdate from './pages/User/UserUpdate';
+import UserProfile from './pages/User/UserProfile';
+import Bills from './pages/Bills';
 
 const router = createBrowserRouter([
   {
@@ -35,12 +35,12 @@ const router = createBrowserRouter([
         element: <Payment/> 
       },
       {
-        path:"userprofile/edit",
+        path:"edit",
         element: <UserUpdate/>
       },
       {
         path:"userprofile",
-        element: <UserProfile/> 
+        element: <UserProfile/>
       }
     ]
   },

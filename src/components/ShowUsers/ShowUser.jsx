@@ -4,11 +4,11 @@ import SingleUser from "./SingleUser";
 
 const ShowUser = () => {
   const allUsersData = [
-    { id: 1, name: "Ali", contact: "017552324341", charge: 500 },
-    { id: 2, name: "Bli", contact: "017552324341", charge: 500 },
-    { id: 3, name: "Cli", contact: "017552324341", charge: 500 },
-    { id: 4, name: "Dli", contact: "017552324341", charge: 500 },
-    { id: 5, name: "Fli", contact: "017552324341", charge: 500 },
+    { id: 1, name: "Ali Ruddro", contact: "017552324341", charge: 500 },
+    { id: 2, name: "Touhidul", contact: "01518999578", charge: 500 },
+    { id: 3, name: "Noman Dipto", contact: "017552324341", charge: 500 },
+    { id: 4, name: "Foysal", contact: "017552324341", charge: 500 },
+    { id: 5, name: "Shadhin", contact: "017552324341", charge: 500 },
   ];
 
   return (

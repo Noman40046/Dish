@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const UserLogin = () => {
   const [email, setEmail] = useState("");
@@ -8,7 +9,7 @@ const UserLogin = () => {
   const navigate = useNavigate();
   const submitHandler = (e) => {
     e.preventDefault();
-    if (email == "admin@admin.com" && passWord == "admin") {
+    if (email == "admin@gmail.com" && passWord == "admin") {
       navigate("/dashboard");
       toast.success('Successfully Loged In!')
     } else {

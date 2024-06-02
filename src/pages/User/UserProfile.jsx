@@ -1,5 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const UserProfile = () => {
     return (
         <div>
@@ -13,7 +14,7 @@ const UserProfile = () => {
 
                 <div className="mt-4">
                     <button className="bg-black text-white  py-2 px-4 rounded-full mx-1 hover:bg-gray-600">
-                        <Link to="edit">Edit</Link>
+                        <Link to="../edit">Edit</Link>
                     </button>
 
                 </div>
