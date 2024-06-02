@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import ShowUser from "./ShowUsers/ShowUser";
 
-const Clients = () => {
+const Bills = () => {
   return (
     <div className="p-4 sm:ml-64">
       <main className=" w-full px-3 sm:px-10">
@@ -45,4 +46,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Bills;

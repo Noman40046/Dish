@@ -1,16 +1,16 @@
  import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import MainLayout from './MainLayout';
 import UserLogin from './components/User/UserLogin';
 import Dashboard from './pages/Dashboard';
-import Clients from './components/Clients';
-import Payment from './components/User/Payment';
-import Message from './components/User/Message';
 import UserProfile from './components/User/UserProfile';
 import UserUpdate from './components/User/UserUpdate';
 import { Toaster } from 'react-hot-toast';
+import Payment from './pages/Payment';
+import Bills from './components/Bills';
+import Message from './pages/Message';
 
 const router = createBrowserRouter([
   {
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <Dashboard/> 
       },
       {
-        path:"clients",
-        element: <Clients/> 
+        path:"bills",
+        element: <Bills/>
       },
       {
         path:"messege",

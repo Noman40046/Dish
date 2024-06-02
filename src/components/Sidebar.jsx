@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -26,7 +27,7 @@ const Sidebar = () => {
               </NavLink>
             </li>
             <li>
-              <Link to="clients">
+              <Link to="bills">
                 <a
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "

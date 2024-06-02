@@ -36,13 +36,13 @@ const Mainheader = () => {
                 <Link to="/dashboard">Dashboard</Link>
               </li>
               <li>
-                <Link to="clients">Metered Billing</Link>
+                <Link to="bills">Billing</Link>
               </li>
               <li>
                 <Link to="payments">Payments</Link>
               </li>
               <li>
-                <Link to="/messege">Send Messege</Link>
+                <Link to="messege">Send Messege</Link>
               </li>
               <li>
                 <Link to="/">Sign Out</Link>
