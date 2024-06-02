@@ -13,7 +13,7 @@ const UserProfile = () => {
 
                 <div className="mt-4">
                     <button className="bg-black text-white  py-2 px-4 rounded-full mx-1 hover:bg-gray-600">
-                        <Link to="/edit">Edit</Link>
+                        <Link to="edit">Edit</Link>
                     </button>
 
                 </div>

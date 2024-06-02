@@ -30,16 +30,16 @@ const Mainheader = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm text-black  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm gap-4 text-black  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
                 <Link to="/dashboard">Dashboard</Link>
               </li>
               <li>
-                <Link to="/clients">Metered Billing</Link>
+                <Link to="clients">Metered Billing</Link>
               </li>
               <li>
-                <Link to="/payments">Payments</Link>
+                <Link to="payments">Payments</Link>
               </li>
               <li>
                 <Link to="/messege">Send Messege</Link>

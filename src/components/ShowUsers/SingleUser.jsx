@@ -1,0 +1,45 @@
+/* eslint-disable react/prop-types */
+import React from "react";
+import { Link } from "react-router-dom";
+
+const SingleUser = ({ item }) => {
+  return (
+    <div>
+      <div
+        key={item.id}
+        className="client-table-row flex items-start justify-start gap-x-3 px-10 py-4"
+      >
+        <div className="text-left ">{item.id}</div>
+        <div className="text-left">{item.name}</div>
+        <div className="text-left">{item.contact}</div>
+        <div className="text-left">{item.charge} ৳</div>
+        <div className="text-left">
+          <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button">
+              {" "}
+              <div className="cursor-pointer  hover:text-blue-900 font-bold text-lg">
+                ....
+              </div>
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box "
+            >
+              <li>
+                <Link to="userprofile">View</Link>
+              </li>
+              <li>
+                <Link to="edit">Edit</Link>
+              </li>
+              <li>
+                <a>Delete</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SingleUser;

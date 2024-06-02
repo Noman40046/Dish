@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 const Payment = () => {
@@ -5,23 +6,23 @@ const Payment = () => {
     <div className="p-4 sm:ml-64" >
       <main className=" w-full px-3 sm:px-10">
         <section>
-          <div
-            className=" mb-4 mt-4 border rounded-xl px-5 sm:px-10  pt-8 pb-4 relative xl:bg-[url('../images/invoice.png')] bg-no-repeat bg-right bg-contain ">
+          <div className=" mb-4 mt-4 border rounded-xl px-5 sm:px-10  pt-8 pb-4 relative bg-no-repeat bg-right bg-contain ">
+            <center>
             <div className=" font-semibold text-lg text-black">All Payments</div>
-            <div className="mt-6 grid grid-cols-1 items-end xs:grid-cols-2 gap-y-6  gap-x-6 md:flex md:space-x-6 md:gap-x-0 ">
+            <div className="mt-6  flex items-end justify-center gap-2">
               <div className="flex flex-col   md:w-40  text-black text-sm space-y-2 font-semibold">
-                <label for="client">Begin Date</label>
+                <label htmlFor="client">Begin Date</label>
                 <div className="inline-flex relative">
                   <input
-                    className=" shadow-lg border tracking-wider pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                    className=" shadow-lg border  pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
                     id="client" name="client" type="date" />
                 </div>
               </div>
               <div className="flex flex-col md:w-40  text-black text-sm space-y-2 font-semibold">
-                <label for="client">End Date</label>
+                <label htmlFor="client">End Date</label>
                 <div className="inline-flex relative">
                   <input
-                    className=" shadow-lg border tracking-wider pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                    className=" shadow-lg border  pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
                     id="client" name="client" type="date" />
                 </div>
               </div>
@@ -29,6 +30,7 @@ const Payment = () => {
                 <div className="btn w-52 bg-black text-white hover:bg-gray-800">Search Payments</div>
               </div>
             </div>
+            </center>
           </div>
         </section>
 
@@ -40,7 +42,7 @@ const Payment = () => {
               <div className="flex items-center gap-2  text-black text-sm  font-semibold">
                 <div>
                   <input
-                    className=" shadow-lg border tracking-wider pl-4 pr-10 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                    className=" shadow-lg border  pl-4 pr-10 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
                     id="client" name="client" type="text" placeholder='Enter User Id' />
                 </div>
                 <div className="btn bg-black text-white "><span >Search User</span></div>

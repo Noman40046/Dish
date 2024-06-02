@@ -13,27 +13,27 @@ const Sidebar = () => {
         <div className="h-full px-3  overflow-y-auto  border-t pt-6 ">
           <ul className="space-y-2 font-medium">
             <li>
-              <Link to="/dashboard">
+            <NavLink to="/dashboard" activeStyle={{ backgroundColor:' #349eff' }}>
                 <a
                   href="#"
-                  className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "
+                  className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"
                 >
-                  <span class="material-symbols-outlined">dashboard</span>
+                  <span className="material-symbols-outlined">dashboard</span>
                   <span className="flex-1 ms-3 whitespace-nowrap">
-                    Dashboard{" "}
+                    Dashboard
                   </span>
                 </a>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/clients">
+              <Link to="clients">
                 <a
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "
                 >
-                  <span class="material-symbols-outlined">person</span>
+                  <span className="material-symbols-outlined">person</span>
                   <span className="flex-1 ms-3 whitespace-nowrap">
-                    Metered Billing
+                     Billing
                   </span>
                 </a>
               </Link>
@@ -44,7 +44,7 @@ const Sidebar = () => {
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "
                 >
-                  <span class="material-symbols-outlined">payments</span>
+                  <span className="material-symbols-outlined">payments</span>
                   <span className="flex-1 ms-3 whitespace-nowrap">
                     Payments
                   </span>
@@ -52,26 +52,26 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to="messege">
+              <NavLink to="messege" activeClassName="active-link">
                 <a
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "
                 >
-                  <span class="material-symbols-outlined">chat</span>
+                  <span className="material-symbols-outlined">chat</span>
                   <span className="flex-1 ms-3 whitespace-nowrap">
                     Send Messege
                   </span>
                 </a>
-              </Link>
+              </NavLink>
             </li>
 
             <li>
               <Link to="/">
                 <a
                   href="#"
-                  className="flex items-center p-2 text-gray-900 rounded-lg     hover:bg-gray-100   "
+                  className="flex items-center p-2 text-gray-900 rounded-lg    hover:bg-gray-100   "
                 >
-                  <span class="material-symbols-outlined">logout</span>
+                  <span className="material-symbols-outlined">logout</span>
                   <span className="flex-1 ms-3 whitespace-nowrap">
                     Sign Out
                   </span>
