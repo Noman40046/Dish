@@ -11,7 +11,7 @@ const UserLogin = () => {
     e.preventDefault();
     if (email == "admin@gmail.com" && passWord == "admin") {
       navigate("/dashboard");
-      toast.success('Successfully Loged In!')
+      toast.success("Successfully Loged In!");
     } else {
       toast.error("Something Wrong!");
     }

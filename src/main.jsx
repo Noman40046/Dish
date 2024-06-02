@@ -39,7 +39,7 @@ const router = createBrowserRouter([
         element: <UserUpdate/>
       },
       {
-        path:"userprofile",
+        path:"/dashboard/userprofile/:id",
         element: <UserProfile/>
       }
     ]

@@ -2,11 +2,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-const AllPayments = ({item}) => {
+const AllPayments = ({ item }) => {
   return (
     <div>
       {/* All payments */}
-      
+
       <div
         key={item.id}
         className="client-table-row flex items-start justify-start gap-x-3  mb-4 px-10 py-4"
@@ -18,8 +18,11 @@ const AllPayments = ({item}) => {
         <div className="text-left">
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button">
-              <span className="px-4 py-1 rounded-lg bg-rose-400  text-white">
+              <span className="px-4 py-1 flex items-center rounded-lg bg-rose-400  text-white">
                 Pending
+                <span className="material-symbols-outlined">
+                  arrow_drop_down
+                </span>
               </span>
             </div>
             <ul

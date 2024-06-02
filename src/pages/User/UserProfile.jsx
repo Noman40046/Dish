@@ -1,7 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 const UserProfile = () => {
+    const id = useParams()
+    console.log(id);
     return (
         <div>
             <div className="max-w-lg mx-auto bg-white border-r border-l h-full overflow-hidden text-center mt-12 p-6">

@@ -44,7 +44,7 @@ const Payment = () => {
             <div className="text-left">Id</div>
             <div className="text-left">User name</div>
             <div className="text-left">Month</div>
-            <div className="text-left">charge</div>
+            <div className="text-left">Charge</div>
             <div className="text-left">Status</div>
           </div>
           <div className="bg-white mt-5 rounded-xl text-sm  text-black divide-y divide-indigo-50 overflow-x-auto  shadow">

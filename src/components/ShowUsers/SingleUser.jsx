@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const SingleUser = ({ item }) => {
   return (
@@ -27,7 +27,7 @@ const SingleUser = ({ item }) => {
               className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box "
             >
               <li>
-                <Link to="userprofile">View</Link>
+                <NavLink to={`/dashboard/userprofile/${item.id}`}>View</NavLink>
               </li>
               <li>
                 <Link to="edit">Edit</Link>
