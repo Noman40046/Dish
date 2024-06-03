@@ -50,6 +50,7 @@
   }
   .dashboard-card{
     width: 100% !important;
+    margin-bottom: 10px;
   }
   .client-table-row{
     font-size: 10px !important;

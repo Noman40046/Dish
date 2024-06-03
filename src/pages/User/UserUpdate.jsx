@@ -110,7 +110,7 @@ const UserUpdate = () => {
                     <div className="form-group">
                       <div className="">
                         <label htmlFor="drop-zone">
-                          <div className="h-[100px]  flex flex-col items-center justify-center  border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                          <div className="h-[100px]  flex flex-col items-center justify-center  border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50">
                             <input
                               className="hidden"
                               id="drop-zone"
@@ -141,37 +141,43 @@ const UserUpdate = () => {
               </div>
             </div>
           </div>
-          <div className="w-fit  md:w-1/4 px-4 py-4 mb-4 md:mb-0 bg-white border userupdateprofile rounded-lg">
+          {/* user profile */}
+          <div className="w-[50%] px-4 py-4 mb-4 md:mb-0 bg-white border userupdateprofile rounded-lg">
             <img
               src={student.img}
               className="rounded-full w-32 h-32 mx-auto"
               alt="profile"
             />
-
             <div className="text-left mt-6">
-              <p className="text-gray-600 mt-4">
-                <strong>Id :</strong> <span className="ml-2">{student.id}</span>
-              </p>
-              <p className="text-gray-600 mt-4">
-                <strong>Charge :</strong>{" "}
-                <span className="ml-2">{student.charge}</span>
-              </p>
-              <p className="text-gray-600 mt-4">
-                <strong>Name :</strong>{" "}
-                <span className="ml-2">{student.name}</span>
-              </p>
-              <p className="text-gray-600 mt-2">
-                <strong>Mobile :</strong>{" "}
-                <span className="ml-2">{student.contact}</span>
-              </p>
-              <p className="text-gray-600 mt-2">
-                <strong>Email :</strong>{" "}
-                <span className="ml-2">{student.email}</span>
-              </p>
-              <p className="text-gray-600 mt-2">
-                <strong>Location :</strong>{" "}
-                <span className="ml-2">{student.location}</span>
-              </p>
+              <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
+                <div className="font-bold">Id :</div>
+                <div>{student.id}</div>
+              </div>
+
+              <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
+                <div className="font-bold">Charge :</div>{" "}
+                <div>{student.charge}</div>
+              </div>
+              <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
+                <div className="font-bold">Name :</div>{" "}
+                <div>{student.name}</div>
+              </div>
+              <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+                <div className="font-bold">Contact :</div>{" "}
+                <div>{student.contact}</div>
+              </div>
+              <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+                <div className="font-bold">Email :</div>{" "}
+                <div>{student.email}</div>
+              </div>
+              <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+                <div className="font-bold">Location :</div>{" "}
+                <div>{student.location}</div>
+              </div>
+              <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+                <div className="font-bold">Charge :</div>{" "}
+                <div>{student.charge}</div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
+import DashBoardCard from "../../components/dashboard-components/DashBoardCard";
 
 const UserProfile = () => {
   const { id } = useParams();
@@ -28,44 +29,61 @@ const UserProfile = () => {
   }
 
   return (
-    <div>
-      <div className="max-w-lg mx-auto bg-white border-r border-l h-full overflow-hidden text-center mt-12 p-6">
-        <img
-          src={student.img}
-          className="rounded-full w-32 h-32 mx-auto"
-          alt="profile"
-        />
-        <div className="mt-4">
-          <button className=" text-black underline py-2 px-4 text-xl rounded-full mx-1 hover:text-gray-700">
-            <NavLink to={`../edit/${student.id}`}>Edit</NavLink>
-          </button>
+    <div className="p-4 sm:ml-64">
+      <div className=" lg:grid-cols-2 lg:grid">
+        <div className="mt-6 lg:grid gap-2 md:grid-none md:flex lg:grid-cols-2 w-full lg:justify-between">
+          <DashBoardCard title="Trsnsactions" icon="payments" num="5" />
+          <DashBoardCard
+            title="Total Payments"
+            icon="account_balance_wallet"
+            num="7000"
+          />
         </div>
-        <div className="text-left mt-6">
-          <p className="text-gray-600 mt-4">
-            <strong>Id :</strong> <span className="ml-2">{student.id}</span>
-          </p>
-          <p className="text-gray-600 mt-4">
-            <strong>Charge :</strong> <span className="ml-2">{student.charge}</span>
-          </p>
-          <p className="text-gray-600 mt-4">
-            <strong>Name :</strong> <span className="ml-2">{student.name}</span>
-          </p>
-          <p className="text-gray-600 mt-2">
-            <strong>Contact :</strong>{" "}
-            <span className="ml-2">{student.contact}</span>
-          </p>
-          <p className="text-gray-600 mt-2">
-            <strong>Email :</strong>{" "}
-            <span className="ml-2">{student.email}</span>
-          </p>
-          <p className="text-gray-600 mt-2">
-            <strong>Location :</strong>{" "}
-            <span className="ml-2">{student.location}</span>
-          </p>
-          <p className="text-gray-600 mt-2">
-            <strong>Charge :</strong>{" "}
-            <span className="ml-2">{student.charge}</span>
-          </p>
+
+        {/* Clients profile */}
+        <div className="max-w-lg mx-auto w-full bg-white border-r border-l h-full overflow-hidden text-center mt-12 p-6">
+          <img
+            src={student.img}
+            className="rounded-full w-32 h-32 mx-auto"
+            alt="profile"
+          />
+          <div className="text-left mt-6">
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
+              <div className="font-bold">Id :</div>
+              <div>{student.id}</div>
+            </div>
+
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
+              <div className="font-bold">Charge :</div>{" "}
+              <div>{student.charge}</div>
+            </div>
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
+              <div className="font-bold">Name :</div> <div>{student.name}</div>
+            </div>
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+              <div className="font-bold">Contact :</div>{" "}
+              <div>{student.contact}</div>
+            </div>
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+              <div className="font-bold">Email :</div>{" "}
+              <div>{student.email}</div>
+            </div>
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+              <div className="font-bold">Location :</div>{" "}
+              <div>{student.location}</div>
+            </div>
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
+              <div className="font-bold">Charge :</div>{" "}
+              <div>{student.charge}</div>
+            </div>
+          </div>
+          <div className="mt-4">
+            <NavLink to={`../edit/${student.id}`}>
+              <button className=" text-white w-full rounded-sm  bg-black py-2 px-4 text-xl mx-1 hover:bg-gray-700">
+                Edit
+              </button>
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>
