@@ -37,9 +37,7 @@ const Payment = () => {
 
         <section className="border rounded-lg">
           <div className="flex p-4 items-center justify-between w-full flex-wrap">
-            <div className="font-bold text-lg text-black">
-              All Payments
-            </div>
+            <div className="font-bold text-lg text-black">All Payments</div>
             <div className="font-bold text-lg text-black">
               <div className="flex items-center gap-2 text-black text-sm font-semibold">
                 <div>
@@ -67,8 +65,8 @@ const Payment = () => {
           <div className="border-b border-t rounded-none overflow-visible text-sm client-table-row bg-white px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
             <div className="text-left w-1/5">Id</div>
             <div className="text-left w-1/5">User name</div>
-            <div className="text-left w-1/5">Month</div>
             <div className="text-left w-1/5">Date</div>
+            <div className="text-left w-1/5">Month</div>
             <div className="text-left w-1/5">Charge</div>
             <div className="text-left w-1/5">Status</div>
           </div>

@@ -9,7 +9,7 @@ const ShowUser = () => {
 
   useEffect(() => {
     // Fetch user data from the server
-    fetch('../../../data/users.json')
+    fetch('https://cdn.statically.io/gh/touhidul5700/dishdatabase@master/userinformation.json')
       .then(response => response.json())
       .then(data => {
         setAllUsersData(data);

@@ -31,18 +31,21 @@ const UserProfile = () => {
     <div>
       <div className="max-w-lg mx-auto bg-white border-r border-l h-full overflow-hidden text-center mt-12 p-6">
         <img
-          src="https://bootdey.com/img/Content/avatar/avatar7.png"
+          src={student.img}
           className="rounded-full w-32 h-32 mx-auto"
           alt="profile"
         />
         <div className="mt-4">
-          <button className="bg-black text-white py-2 px-4 rounded-full mx-1 hover:bg-gray-600">
-            <NavLink to={`../edit/${student.id}`}>edit</NavLink>
+          <button className=" text-black underline py-2 px-4 text-xl rounded-full mx-1 hover:text-gray-700">
+            <NavLink to={`../edit/${student.id}`}>Edit</NavLink>
           </button>
         </div>
         <div className="text-left mt-6">
           <p className="text-gray-600 mt-4">
             <strong>Id :</strong> <span className="ml-2">{student.id}</span>
+          </p>
+          <p className="text-gray-600 mt-4">
+            <strong>Charge :</strong> <span className="ml-2">{student.charge}</span>
           </p>
           <p className="text-gray-600 mt-4">
             <strong>Name :</strong> <span className="ml-2">{student.name}</span>
