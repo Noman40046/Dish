@@ -9,17 +9,21 @@ const ShowUser = () => {
 
   useEffect(() => {
     // Fetch user data from the server
-    fetch('https://cdn.statically.io/gh/touhidul5700/dishdatabase@master/userinformation.json')
-      .then(response => response.json())
-      .then(data => {
+    fetch(
+      "https://cdn.statically.io/gh/touhidul5700/dishdatabase@master/userinformation.json"
+    )
+      .then((response) => response.json())
+      .then((data) => {
         setAllUsersData(data);
         setFilteredUsers(data);
       })
-      .catch(error => console.error('Error fetching data:', error));
+      .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   const handleSearch = () => {
-    const filtered = allUsersData.filter(user => user.id.toString().includes(searchTerm));
+    const filtered = allUsersData.filter((user) =>
+      user.id.toString().includes(searchTerm)
+    );
     setFilteredUsers(filtered);
   };
 
@@ -31,7 +35,7 @@ const ShowUser = () => {
           <div className="flex items-center gap-2 text-black text-sm font-semibold">
             <div>
               <input
-                className="usersearchinput shadow-lg border pl-4 py-3 rounded-lg w-full focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                className="shadow-lg border pl-4 py-3 rounded-lg w-full focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
                 id="client"
                 name="client"
                 type="text"
