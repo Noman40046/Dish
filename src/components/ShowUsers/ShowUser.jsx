@@ -25,9 +25,9 @@ const ShowUser = () => {
 
   return (
     <section className="border rounded-lg">
-      <div className="flex justify-between w-full flex-wrap">
-        <div className="p-4 font-bold text-lg text-black">All User</div>
-        <div className="p-4 font-bold text-lg text-black">
+      <div className="flex items-center py-4 px-4 justify-between w-full flex-wrap">
+        <div className="font-bold text-lg text-black">All User</div>
+        <div className="font-bold text-lg text-black">
           <div className="flex items-center gap-2 text-black text-sm font-semibold">
             <div>
               <input
@@ -46,7 +46,7 @@ const ShowUser = () => {
           </div>
         </div>
       </div>
-      <div className="border-b border-t rounded-noneoverflow-visible text-sm client-table-row bg-white mt-10 px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
+      <div className="border-b border-t rounded-noneoverflow-visible text-sm client-table-row bg-white px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
         <div className="text-left">Id</div>
         <div className="text-left">User name</div>
         <div className="text-left">Contact</div>

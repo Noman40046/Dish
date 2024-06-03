@@ -1,9 +1,7 @@
-import React from "react";
-
 const DashboardOverview = () => {
   return (
     <div>
-      <div className=" mb-4 mt-4  rounded-xl pt-8 pb-4 relative bg-no-repeat bg-right bg-contain ">
+      <div className=" mb-4 mt-4  rounded-xl pb-4 relative bg-no-repeat bg-right bg-contain ">
         <div className="mt-6 md:flex justify-between  flex-wrap">
           <div className="flex  justify-between  text-black text-sm space-y-2 font-semibold">
             <div className="inline-flex relative border-2 h-32 w-52 dashboard-card  rounded-lg  p-4 ">

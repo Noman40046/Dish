@@ -13,6 +13,7 @@ const AllPayments = ({ item }) => {
       >
         <div className="text-left ">{item.id}</div>
         <div className="text-left">{item.name}</div>
+        <div className="text-left">{item.date}</div>
         <div className="text-left">{item.month}</div>
         <div className="text-left">{item.ammount}৳</div>
         <div className="text-left">
