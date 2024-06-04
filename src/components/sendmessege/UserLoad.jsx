@@ -8,7 +8,7 @@ const UserLoad = () => {
 
   useEffect(() => {
     // Fetch user data from the server
-    fetch("../../../data/users.json")
+    fetch("./data/users.json")
       .then((response) => response.json())
       .then((data) => {
         setAllUsersData(data);

@@ -10,7 +10,7 @@ const ShowUser = () => {
   useEffect(() => {
     // Fetch user data from the server
     fetch(
-      "../../../data/users.json"
+      "./data/users.json"
     )
       .then((response) => response.json())
       .then((data) => {

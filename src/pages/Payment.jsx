@@ -9,7 +9,7 @@ const Payment = () => {
   const [filteredUsersData, setFilteredUsersData] = useState([]);
 
   useEffect(() => {
-    fetch("../../data/payments.json")
+    fetch("./data/payments.json")
       .then((response) => response.json())
       .then((data) => {
         setAllUsersData(data);
