@@ -1,31 +1,30 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-import SingleUser from "./SingleUser";
+import UserLoad from "./UserLoad";
 
-const ShowUser = () => {
+const SendMessage = () => {
   const [allUsersData, setAllUsersData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
 
   useEffect(() => {
     // Fetch user data from the server
-    fetch(
-      "../../../data/users.json"
-    )
+    fetch("../../../data/users.json")
       .then((response) => response.json())
       .then((data) => {
         setAllUsersData(data);
-        setFilteredUsers(data);
+        setFilteredUsers(data); // Initially set filtered users to all users
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  const handleSearch = () => {
+  useEffect(() => {
+    // Filter users whenever searchTerm changes
     const filtered = allUsersData.filter((user) =>
       user.id.toString().includes(searchTerm)
     );
     setFilteredUsers(filtered);
-  };
+  }, [searchTerm, allUsersData]);
 
   return (
     <section className="border rounded-lg">
@@ -44,8 +43,8 @@ const ShowUser = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <div className="btn bg-black text-white" onClick={handleSearch}>
-              <span>Search User</span>
+            <div className="btn bg-black text-white" onClick={() => setSearchTerm("")}>
+              <span>Clear Search</span>
             </div>
           </div>
         </div>
@@ -61,11 +60,11 @@ const ShowUser = () => {
       <div className="bg-white mt-5 rounded-xl text-sm text-black divide-y divide-indigo-50 overflow-x-auto shadow">
         {/* users Data Show */}
         {filteredUsers.map((item, index) => (
-          <SingleUser key={index} item={item} />
+          <UserLoad key={index} item={item} />
         ))}
       </div>
     </section>
   );
 };
 
-export default ShowUser;
+export default SendMessage;
