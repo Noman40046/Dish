@@ -21,7 +21,7 @@ const Message = () => {
           </div>
         </div>
       </form>
-      <UserLoad />
+      <UserLoad/>
     </div>
   );
 };

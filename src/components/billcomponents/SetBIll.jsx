@@ -14,7 +14,7 @@ const SetBIll = () => {
             <label htmlFor="billid">Enter User Id</label>
             <div className="inline-flex  ">
               <input
-                className=" shadow-lg border  pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                className="border  pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
                 id="billid"
                 name="billid"
                 type="text"
@@ -26,7 +26,7 @@ const SetBIll = () => {
             <label htmlFor="client">Enter Ammount</label>
             <div className="inline-flex  ">
               <input
-                className=" shadow-lg border  pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                className="border  pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
                 id="billammount"
                 name="billammount"
                 type="number"

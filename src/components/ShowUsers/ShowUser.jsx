@@ -35,7 +35,7 @@ const ShowUser = () => {
           <div className="flex items-center gap-2 text-black text-sm font-semibold">
             <div>
               <input
-                className="shadow-lg border pl-4 py-3 rounded-lg w-full focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                className="border pl-4 py-3 rounded-lg w-full focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
                 id="client"
                 name="client"
                 type="text"
