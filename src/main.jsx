@@ -11,6 +11,7 @@ import Message from "./pages/Message";
 import UserUpdate from "./pages/User/UserUpdate";
 import UserProfile from "./pages/User/UserProfile";
 import Bills from "./pages/Bills";
+import AddUser from "./pages/User/AddUser";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         path: "/dashboard/userprofile/:id",
         element: <UserProfile />,
       },
+      {
+        path: "adduser",
+        element: <AddUser/>,
+      }
     ],
   },
   {

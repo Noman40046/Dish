@@ -31,6 +31,7 @@ const UserUpdate = () => {
     <div className="p-4 sm:ml-64">
       <div className="container mx-auto mt-10 p-4">
         <div className="flex user-update-flexbox ">
+          {/* Update form */}
           <div className="w-full  md:w-3/4 px-4 userupdateform">
             <div className="bg-white border rounded-lg overflow-hidden h-full">
               <div className="p-4">

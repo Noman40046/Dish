@@ -88,8 +88,8 @@ const UserProfile = () => {
           </div>
           {/* Table end */}
         </div>
+        
         {/* Clients profile */}
-
         <div className="max-w-lg mx-auto w-full bg-white border h-full overflow-hidden text-center rounded-xl p-6">
           <img
             src={student.img}

@@ -4,6 +4,7 @@ import {
   Grid2X2,
   HandCoins,
   MessageCircle,
+  UserRoundPlus,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -57,6 +58,16 @@ const Sidebar = () => {
                 <MessageCircle />
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Send Messege
+                </span>
+              </NavLink>
+              <NavLink
+                className="flex items-center p-2 text-gray-900 rounded-lg"
+                to="adduser"
+                activeClassName="active-link"
+              >
+                <UserRoundPlus/>
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Add User
                 </span>
               </NavLink>
             </li>

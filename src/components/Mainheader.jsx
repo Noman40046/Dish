@@ -5,6 +5,7 @@ import {
   HandCoins,
   LogOut,
   MessageCircle,
+  UserRoundPlus,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -64,6 +65,11 @@ const Mainheader = () => {
             <li>
               <NavLink to="messege">
                 <MessageCircle />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="adduser">
+              <UserRoundPlus/>
               </NavLink>
             </li>
           </ul>
