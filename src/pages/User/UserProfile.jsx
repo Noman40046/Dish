@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import DashBoardCard from "../../components/dashboard-components/DashBoardCard";
-import { Banknote, Handshake } from "lucide-react";
+import { Banknote, Handshake, PencilIcon } from "lucide-react";
 
 const UserProfile = () => {
   const { id } = useParams();
@@ -128,8 +128,8 @@ const UserProfile = () => {
           </div>
           <div className="mt-4">
             <NavLink to={`../edit/${student.id}`}>
-              <button className=" text-white w-full rounded-sm  bg-black py-2 px-4 text-xl mx-1 hover:bg-gray-700">
-                Edit
+              <button className=" text-white w-full btn bg-black py-2 px-4 text-xl mx-1 hover:bg-gray-700">
+              <PencilIcon/>Edit
               </button>
             </NavLink>
           </div>

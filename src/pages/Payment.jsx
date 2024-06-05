@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import PaymentSearch from "../components/payment-components/PaymentSearch";
 import AllPayments from "../components/payment-components/AllPayments";
+import { Search } from "lucide-react";
 
 const Payment = () => {
   const [allUsersData, setAllUsersData] = useState([]);
@@ -55,7 +56,7 @@ const Payment = () => {
                   className="btn bg-black text-white cursor-pointer"
                   onClick={handleSearchButtonClick}
                 >
-                  <span>Search</span>
+                  <span className="flex gap-1 justify-center items-center"><Search/> Search</span>
                 </div>
               </div>
             </div>

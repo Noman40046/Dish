@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import { Edit, EyeIcon, Trash } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const SingleUser = ({ item }) => {
@@ -14,12 +14,12 @@ const SingleUser = ({ item }) => {
         <td className="hidden lg:block">
           <div className="flex gap-2">
             <button className="btn btn-sm bg-black text-white">
-              <NavLink to={`/dashboard/userprofile/${item.id}`}>View</NavLink>
+              <NavLink className="flex gap-1" to={`/dashboard/userprofile/${item.id}`}><EyeIcon size={15}/> View</NavLink>
             </button>
             <button className="btn btn-sm bg-black text-white">
-              <NavLink to={`../edit/${item.id}`}>Edit</NavLink>
+              <NavLink  className="flex gap-1" to={`../edit/${item.id}`}><Edit size={15}/> Edit</NavLink>
             </button>
-            <button className="btn btn-sm btn-error text-white">Delete</button>
+            <button className="btn btn-sm btn-error flex gap-1 text-white"><Trash size={15}/> Delete</button>
           </div>
         </td>
         <td className="block lg:hidden">

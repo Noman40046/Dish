@@ -17,7 +17,7 @@ const DashBoardCard = ({ title, icon, num, percent, arrow, cardimg }) => {
               <div className="flex flex-col gap-2">
                 <div className="client-number text-xl font-bold">{num}</div>
                 <div className="text-sm text-green-700 gap-2 flex">
-                  <span className="material-symbols-outlined text-sm w-6 text-center flex items-center h-6 p-1 rounded-full bg-green-300">
+                  <span className="material-symbols-outlined text-sm w-6 justify-center text-center flex items-center h-6 p-1 rounded-full bg-green-300">
                     {arrow} {/* arrow_upward */}
                   </span>
                   <span className="font-bold">{percent}</span>

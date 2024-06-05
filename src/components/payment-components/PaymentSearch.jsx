@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-
+import { Search } from "lucide-react";
 const PaymentSearch = () => {
   return (
     <div>
@@ -34,7 +33,7 @@ const PaymentSearch = () => {
             </div>
             <div className="flex flex-col w-fit   font-semibold">
               <div className="btn w-52 bg-black text-white hover:bg-gray-800">
-                Search Payments
+              <Search/> Search Payments
               </div>
             </div>
           </div>
