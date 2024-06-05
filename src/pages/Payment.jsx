@@ -55,7 +55,7 @@ const Payment = () => {
                   className="btn bg-black text-white cursor-pointer"
                   onClick={handleSearchButtonClick}
                 >
-                  <span>Search User</span>
+                  <span>Search</span>
                 </div>
               </div>
             </div>

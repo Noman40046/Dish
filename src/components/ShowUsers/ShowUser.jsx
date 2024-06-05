@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
 import SingleUser from "./SingleUser";
+import { Search } from "lucide-react";
 
 const ShowUser = () => {
   const [allUsersData, setAllUsersData] = useState([]);
@@ -30,7 +31,7 @@ const ShowUser = () => {
   return (
     <section className="border rounded-lg">
       <div className="flex items-center py-4 px-4 justify-between w-full flex-wrap">
-        <div className="font-bold text-lg text-black">All User</div>
+        <div className="font-bold text-lg text-black">All Users</div>
         <div className="font-bold text-lg text-black">
           <div className="flex items-center gap-2 text-black text-sm font-semibold">
             <div>
@@ -44,8 +45,9 @@ const ShowUser = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <div className="btn bg-black text-white" onClick={handleSearch}>
-              <span>Search User</span>
+            <div className="btn bg-black text-white flex" onClick={handleSearch}>
+            <Search />
+              <span >Search</span>
             </div>
           </div>
         </div>

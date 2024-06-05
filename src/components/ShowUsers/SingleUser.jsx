@@ -14,7 +14,18 @@ const SingleUser = ({ item }) => {
         <div className="text-left">{item.name}</div>
         <div className="text-left">{item.contact}</div>
         <div className="text-left">{item.charge} ৳</div>
-        <div className="text-left">
+        <div className="text-left hidden lg:block">
+        <div className="flex gap-2 ">
+        <button className="btn btn-sm bg-black text-white">
+          <NavLink to={`/dashboard/userprofile/${item.id}`}>View</NavLink>
+        </button>
+        <button className="btn btn-sm bg-black text-white">
+        <NavLink to={`../edit/${item.id}`}>Edit</NavLink>
+        </button>
+        <button className="btn btn-sm btn-error text-white">Delete</button>
+        </div>
+        </div>
+        <div className="text-left lg:hidden block">
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button">
               {" "}
@@ -30,7 +41,7 @@ const SingleUser = ({ item }) => {
                 <NavLink to={`/dashboard/userprofile/${item.id}`}>View</NavLink>
               </li>
               <li>
-                <NavLink to={`../edit/${item.id}`}>edit</NavLink>
+                <NavLink to={`../edit/${item.id}`}>Edit</NavLink>
               </li>
               <li>
                 <a>Delete</a>

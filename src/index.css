@@ -11,9 +11,9 @@
 .mb-4 {
   margin-bottom: 16px !important;
 }
-.material-symbols-outlined{
+/* .material-symbols-outlined{
   color: #6b7280;
-}
+} */
 .menu-dropdown {
   display: none;
 }
@@ -1187,4 +1187,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-border-opacity: 1;
     border-color: rgb(238 242 255 / var(--tw-border-opacity));
   }
+}
+
+:root{
+  font-family: "Inter", sans-serif;
 }
