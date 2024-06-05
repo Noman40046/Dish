@@ -55,9 +55,9 @@ const UserProfile = () => {
           <div className="overflow-x-auto mt-8 border p-8 rounded-xl">
             <div className="mb-4">
               <div className=" text-2xl text-black font-bold">
-                Transaction Type
+                Transactions
               </div>
-              <div className="text-[14px] font-semibold text-gray-500">This month</div>
+              <div className="text-[14px] font-semibold text-gray-500">All Transactions</div>
             </div>
             <table className="table">
               {/* head */}
