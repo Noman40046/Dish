@@ -31,10 +31,10 @@ const PaymentSearch = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col w-fit   font-semibold">
-              <div className="btn w-52 bg-black text-white hover:bg-gray-800">
+   
+              <div className="btn bg-black text-white hover:bg-gray-800">
               <Search/> Search Payments
-              </div>
+
             </div>
           </div>
         </div>

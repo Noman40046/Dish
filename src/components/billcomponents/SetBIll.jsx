@@ -5,11 +5,11 @@ const SetBIll = () => {
     <div>
      <div>
     <div>
-      <div className=" mb-4 mt-4 border rounded-xl px-5 pt-8 pb-4 ">
+      <div className=" mb-3 border rounded-xl px-5 pt-8 pb-4 ">
         <div className=" font-bold text-lg text-black text-left ">
-          Search Payments
+          Set Bill
         </div>
-        <div className="mt-6 paument-search flex items-end justify-between gap-2">
+        <div className="mt-4 paument-search flex items-end justify-between gap-2">
           <div className="flex flex-col w-full text-black text-sm space-y-2 font-semibold text-left">
             <label htmlFor="billid">Enter User Id</label>
             <div className="inline-flex  ">
@@ -34,11 +34,11 @@ const SetBIll = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col w-fit   font-semibold">
-            <div className="btn w-52 bg-black text-white hover:bg-gray-800">
-              Set Bill
+
+            <div className="btn  bg-black text-white hover:bg-gray-800">
+              Set
             </div>
-          </div>
+       
         </div>
       </div>
     </div>
