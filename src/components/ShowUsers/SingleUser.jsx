@@ -13,13 +13,19 @@ const SingleUser = ({ item }) => {
         <td>{item.charge}</td>
         <td className="hidden lg:block">
           <div className="flex gap-2">
-            <button className="btn btn-sm bg-black text-white">
-              <NavLink className="flex gap-1" to={`/dashboard/userprofile/${item.id}`}><EyeIcon size={15}/> View</NavLink>
+            <NavLink to={`/dashboard/userprofile/${item.id}`}>
+              <button className="btn btn-sm bg-black text-white flex gap-1"><EyeIcon size={15} /> View</button>
+            </NavLink>
+            <NavLink className="" to={`../edit/${item.id}`}>
+              <button className="btn btn-sm bg-black text-white flex gap-1">
+                <Edit size={15} />
+                Edit
+              </button>
+            </NavLink>
+
+            <button className="btn btn-sm btn-error flex gap-1 text-white">
+              <Trash size={15} /> Delete
             </button>
-            <button className="btn btn-sm bg-black text-white">
-              <NavLink  className="flex gap-1" to={`../edit/${item.id}`}><Edit size={15}/> Edit</NavLink>
-            </button>
-            <button className="btn btn-sm btn-error flex gap-1 text-white"><Trash size={15}/> Delete</button>
           </div>
         </td>
         <td className="block lg:hidden">
