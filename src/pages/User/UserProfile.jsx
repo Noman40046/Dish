@@ -96,39 +96,39 @@ const UserProfile = () => {
             className="rounded-full w-32 h-32 mx-auto"
             alt="profile"
           />
-          <div className="text-left mt-6">
-            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
-              <div className="font-bold">Id :</div>
+          <div className="text-left mt-6 text-sm">
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2 pb-1">
+              <div className="font-semibold">Id :</div>
               <div>{student.id}</div>
             </div>
 
-            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
-              <div className="font-bold">Charge :</div>{" "}
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2 pb-1">
+              <div className="font-semibold">Charge :</div>{" "}
               <div>{student.charge}</div>
             </div>
-            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-4">
-              <div className="font-bold">Name :</div> <div>{student.name}</div>
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2 pb-1">
+              <div className="font-semibold">Name :</div> <div>{student.name}</div>
             </div>
-            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
-              <div className="font-bold">Contact :</div>{" "}
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2 pb-1">
+              <div className="font-semibold">Contact :</div>{" "}
               <div>{student.contact}</div>
             </div>
-            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
-              <div className="font-bold">Email :</div>{" "}
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2 pb-1">
+              <div className="font-semibold">Email :</div>{" "}
               <div>{student.email}</div>
             </div>
-            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
-              <div className="font-bold">Location :</div>{" "}
+            <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2 pb-1">
+              <div className="font-semibold">Location :</div>{" "}
               <div>{student.location}</div>
             </div>
             <div className="text-gray-600 flex justify-between items-center text-left  border-b px-2 mt-2">
-              <div className="font-bold">Charge :</div>{" "}
+              <div className="font-semibold">Charge :</div>{" "}
               <div>{student.charge}</div>
             </div>
           </div>
           <div className="mt-4">
             <NavLink to={`../edit/${student.id}`}>
-              <button className=" text-white w-full btn bg-black py-2 px-4 text-xl mx-1 hover:bg-gray-700">
+              <button className=" text-white w-full btn bg-black btn-sm hover:bg-gray-700">
               <PencilIcon/>Edit
               </button>
             </NavLink>
