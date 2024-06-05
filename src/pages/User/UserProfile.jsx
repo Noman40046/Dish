@@ -40,7 +40,7 @@ const UserProfile = () => {
               icon={<Handshake />}
               num="6000"
               arrow="arrow_upward"
-              cardimg="../../../public/card_graph.png"
+              cardimg="https://i.postimg.cc/Pq1Q4W1n/card-down-graph.png"
             />
             <DashBoardCard
               title="Total Payments"
@@ -48,7 +48,7 @@ const UserProfile = () => {
               icon={<Banknote />}
               num="67"
               arrow="arrow_upward"
-              cardimg="../../../public/card_down_graph.png"
+              cardimg="https://i.postimg.cc/9MVtNDBR/card-graph.png"
             />
           </div>
           {/* Table start */}
