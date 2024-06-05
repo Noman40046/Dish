@@ -32,11 +32,64 @@ const UserProfile = () => {
   return (
     <div className="p-4 sm:ml-64">
       <div className=" lg:grid-cols-2 lg:grid">
-        <div className="mt-6 lg:grid gap-2 md:grid-none md:flex lg:grid-cols-2 w-full lg:justify-between">
-          <DashBoardCard title="Total Transactions" percent="34%" icon={<Handshake/>} num="6000" arrow="arrow_upward" cardimg="../../../public/card_graph.png" />
-          <DashBoardCard title="Total Payments" percent="34%" icon={<Banknote/>} num="67" arrow="arrow_upward" cardimg="../../../public/card_down_graph.png"/>
+        <div>
+          <div className="mt-6 lg:grid gap-2 md:grid-none md:flex lg:grid-cols-2 w-full lg:justify-between">
+            <DashBoardCard
+              title="Total Transactions"
+              percent="34%"
+              icon={<Handshake />}
+              num="6000"
+              arrow="arrow_upward"
+              cardimg="../../../public/card_graph.png"
+            />
+            <DashBoardCard
+              title="Total Payments"
+              percent="34%"
+              icon={<Banknote />}
+              num="67"
+              arrow="arrow_upward"
+              cardimg="../../../public/card_down_graph.png"
+            />
+          </div>
+          {/* Table start */}
+          <div className="overflow-x-auto mt-8 border p-8 rounded-xl">
+            <div className="mb-4">
+              <div className=" text-2xl text-black font-bold">
+                Transaction Type
+              </div>
+              <div className="text-[14px] font-semibold text-gray-500">This month</div>
+            </div>
+            <table className="table">
+              {/* head */}
+              <thead>
+                <tr>
+                  <th>Transaction Type</th>
+                  <th>Ammount</th>
+                </tr>
+              </thead>
+              {/* table body */}
+              <tbody>
+                <tr>
+                  <td>
+                    <div className="font-bold">Connection Fee</div>
+                    <div>Jun 03, 2024</div>
+                  </td>
+                  <td>500</td>
+                </tr>
+                <tr className="hover">
+                  <td>
+                    <div className="font-bold">Monthly Fee</div>
+                    <div>Jun 05, 2024</div>
+                  </td>
+                  <td>600</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          {/* Table end */}
         </div>
         {/* Clients profile */}
+
         <div className="max-w-lg mx-auto w-full bg-white border-r border-l h-full overflow-hidden text-center mt-12 p-6">
           <img
             src={student.img}
