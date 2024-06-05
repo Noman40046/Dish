@@ -7,9 +7,13 @@ const Sidebar = () => {
     <div>
       <aside
         id="default-sidebar "
-        className="sidebar-container mt-[65px] fixed bg-[#FBFBFB] border-r top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className="sidebar-container fixed bg-[#FBFBFB] border-r top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
+         <div className="logo flex gap-2 px-4 py-[16.4px]">
+            <img className="w-8" src="../../public/logo.png" alt="" />
+            <h2 className="font-bold">Digital Dish</h2>
+          </div>
         <div className="h-full px-3  overflow-y-auto  border-t pt-6 ">
           <ul className="space-y-2 font-medium">
             <li>

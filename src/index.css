@@ -11,6 +11,9 @@
 .mb-4 {
   margin-bottom: 16px !important;
 }
+.material-symbols-outlined{
+  color: #6b7280;
+}
 .menu-dropdown {
   display: none;
 }
