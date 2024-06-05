@@ -11,8 +11,10 @@ import { NavLink } from "react-router-dom";
 const Mainheader = () => {
   return (
     <div className="header-container ">
-      <div className="navbar  bg-[#FBFBFB]  border text-black">
-        <div className="navbar-start"></div>
+      <div className="navbar rounded-full  fixed top-0 left-0 lg:rounded-none bg-[#FBFBFB] w-full  border text-black">
+      <div className="navbar-start">
+          <img className="ml-8 w-8 h-auto" src="./logo.png" alt="logo" />
+        </div>
         <div className="navbar-center nav-heading">
           <a className=" bg-transparent  border-none text-black  text-xl">
             ADMIN DASHBOARD

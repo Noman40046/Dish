@@ -56,10 +56,8 @@
     margin-bottom: 10px;
   }
   .client-table-row{
-    font-size: 10px !important;
     font-weight: 700 !important;
     gap: 10px !important;
-    width: 100% !important;
     padding: 0 !important;
     padding-left: 10px !important;
   }

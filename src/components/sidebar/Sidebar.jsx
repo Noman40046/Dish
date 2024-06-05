@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div>
       <aside
         id="default-sidebar "
-        className="sidebar-container fixed bg-[#FBFBFB] border-r top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className="sidebar-container fixed bg-[#FBFBFB] border-r top-0 left-0 z-[999] w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
         <div className="logo flex gap-2 px-4 py-[16.4px]">

@@ -8,11 +8,11 @@ const SingleUser = ({ item }) => {
     <div>
       <div
         key={item.id}
-        className="client-table-row flex items-start justify-start gap-x-3 px-10 py-4"
+        className="client-table-row flex items-start justify-start  py-4"
       >
         <div className="text-left ">{item.id}</div>
         <div className="text-left">{item.name}</div>
-        <div className="text-left">{item.contact}</div>
+        <div className="text-left hidden lg:block">{item.contact}</div>
         <div className="text-left">{item.charge} ৳</div>
         <div className="text-left hidden lg:block">
         <div className="flex gap-2 ">

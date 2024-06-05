@@ -52,10 +52,10 @@ const ShowUser = () => {
           </div>
         </div>
       </div>
-      <div className="border-b border-t rounded-noneoverflow-visible text-sm client-table-row bg-white px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
+      <div className=" border-b border-t text-sm client-table-row bg-white px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
         <div className="text-left">Id</div>
-        <div className="text-left">User name</div>
-        <div className="text-left">Contact</div>
+        <div className="text-left">Name</div>
+        <div className="text-left hidden lg:block">Contact</div>
         <div className="text-left">Charge</div>
         <div className="text-left">Action</div>
       </div>
