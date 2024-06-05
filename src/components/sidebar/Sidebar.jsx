@@ -15,8 +15,8 @@ const Sidebar = () => {
         className="sidebar-container fixed bg-[#FBFBFB] border-r top-0 left-0 z-[999] w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="logo flex gap-2 px-4 py-[16.4px]">
-          <img className="w-8" src="../../public/logo.png" alt="" />
+        <div className="logo flex gap-2 items-center px-4 py-[16.4px]">
+          <img className="w-8" src="https://cdn-icons-png.flaticon.com/512/3335/3335909.png" alt="" />
           <h2 className="font-bold">Digital Dish</h2>
         </div>
         <div className="h-full px-3  overflow-y-auto  border-t pt-6 ">

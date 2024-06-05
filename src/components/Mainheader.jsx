@@ -13,10 +13,10 @@ const Mainheader = () => {
     <div className="header-container ">
       <div className="navbar rounded-full  fixed top-0 left-0 lg:rounded-none bg-[#FBFBFB] w-full  border text-black">
       <div className="navbar-start">
-          <img className="ml-8 w-8 h-auto" src="./logo.png" alt="logo" />
+          <img className="ml-8 w-8 h-auto" src="https://cdn-icons-png.flaticon.com/512/3335/3335909.png" alt="logo" />
         </div>
         <div className="navbar-center nav-heading">
-          <a className=" bg-transparent  border-none text-black  text-xl">
+          <a className=" revenue-ammount font-bold text-3xl bg-gradient-to-r from-indigo-600 via-red-500 to-orange-400 inline-block text-transparent bg-clip-text">
             ADMIN DASHBOARD
           </a>
         </div>
