@@ -8,7 +8,7 @@ const MainLayout = () => {
     return (
         <div>
             <Header/>
-          <div className='mt-20'>
+          <div className='mt-20 mb-20'>
           <Outlet/>
           </div>
            

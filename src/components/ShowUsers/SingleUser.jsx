@@ -10,7 +10,7 @@ const SingleUser = ({ item }) => {
         key={item.id}
         className="client-table-row flex items-start justify-start  py-4"
       >
-        <div className="text-left ">{item.id}</div>
+        <div className="text-left ml-4">{item.id}</div>
         <div className="text-left">{item.name}</div>
         <div className="text-left hidden lg:block">{item.contact}</div>
         <div className="text-left">{item.charge} ৳</div>
