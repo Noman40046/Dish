@@ -17,7 +17,11 @@ const Sidebar = () => {
         aria-label="Sidebar"
       >
         <div className="logo flex gap-2 items-center px-4 py-[16.4px]">
-          <img className="w-8" src="https://cdn-icons-png.flaticon.com/512/3335/3335909.png" alt="" />
+          <img
+            className="w-8"
+            src="https://cdn-icons-png.flaticon.com/512/3335/3335909.png"
+            alt=""
+          />
           <h2 className="font-bold">Digital Dish</h2>
         </div>
         <div className="h-full px-3  overflow-y-auto  border-t pt-6 ">
@@ -65,10 +69,8 @@ const Sidebar = () => {
                 to="adduser"
                 activeClassName="active-link"
               >
-                <UserRoundPlus/>
-                <span className="flex-1 ms-3 whitespace-nowrap">
-                  Add User
-                </span>
+                <UserRoundPlus />
+                <span className="flex-1 ms-3 whitespace-nowrap">Add User</span>
               </NavLink>
             </li>
           </ul>

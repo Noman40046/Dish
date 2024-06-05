@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
 }
 .w-full {
@@ -17,51 +17,51 @@
 .menu-dropdown {
   display: none;
 }
-.signinbtn{
+.signinbtn {
   background-color: #000000 !important;
 }
-.signinbtn:hover{
+.signinbtn:hover {
   background-color: #272727 !important;
 }
-.client-table-row{
+.client-table-row {
   justify-content: space-around !important;
   text-align: left !important;
-  
+
 }
-.client-table-row .text-left{
+.client-table-row .text-left {
   width: 100% !important;
 }
-.navbar{
+.navbar {
   z-index: 999;
 }
-@media(max-width:768px) {
-  .paument-search{
+@media (max-width: 768px) {
+  .paument-search {
     flex-wrap: wrap;
   }
-  .user-update-flexbox{
+  .user-update-flexbox {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .userupdateprofile{
+  .userupdateprofile {
     order: 1;
     width: 100% !important;
   }
-  .userupdateform{
+  .userupdateform {
     order: 2;
     width: 100% !important;
     padding: 0 !important;
   }
-  .dashboard-card{
+  .dashboard-card {
     width: 100% !important;
     margin-bottom: 10px;
   }
-  .client-table-row{
+  .client-table-row {
     font-weight: 700 !important;
     gap: 10px !important;
     padding: 0 !important;
     padding-left: 10px !important;
   }
-  .nav-heading a{
+  .nav-heading a {
     font-size: 18px !important;
     font-weight: 600;
   }
@@ -96,73 +96,39 @@
   .summary {
     justify-content: center;
   }
-  .invoice-table-row{
+  .invoice-table-row {
     font-size: 10px !important;
     justify-content: space-around !important;
     font-weight: 700 !important;
     gap: 10px !important;
     padding-right: 300px !important;
   }
-  .invoice-table-header{
+  .invoice-table-header {
     padding-right: 100px !important;
     font-size: 8px !important;
     font-weight: 900 !important;
   }
-  .dropdown-end span{
+  .dropdown-end span {
     padding: 5px 5px;
   }
-  .dropdown-end .text-left{
+  .dropdown-end .text-left {
     display: inline-block;
-
   }
-
 }
-.sidebar-container .active{
+.sidebar-container .active {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-
-
-
-
-
-/* payment css--------------------- */
-/*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
-
-
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
-/*
-Remove the default font size and weight for headings.
-*/
-
-/*
-Reset links to optimize for opt-in styling instead of opt-out.
-*/
-
 a {
   color: inherit;
   text-decoration: inherit;
 }
-
-/*
-Add the correct font weight in Edge and Safari.
-*/
-
-
-
-/*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
-*/
 
 sub {
   bottom: -0.25em;
@@ -172,12 +138,6 @@ sup {
   top: -0.5em;
 }
 
-/*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
-*/
-
 table {
   text-indent: 0;
   /* 1 */
@@ -186,12 +146,6 @@ table {
   border-collapse: collapse;
   /* 3 */
 }
-
-/*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
-*/
 
 button,
 input,
@@ -227,9 +181,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -276,7 +230,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -643,49 +597,49 @@ Ensure the default browser behavior of the `hidden` attribute.
   column-gap: 0.75rem;
 }
 
-.space-y-7> :not([hidden])~ :not([hidden]) {
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
-.space-x-2> :not([hidden])~ :not([hidden]) {
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-4> :not([hidden])~ :not([hidden]) {
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-5> :not([hidden])~ :not([hidden]) {
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-3> :not([hidden])~ :not([hidden]) {
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-2> :not([hidden])~ :not([hidden]) {
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.divide-y> :not([hidden])~ :not([hidden]) {
+.divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.divide-indigo-50> :not([hidden])~ :not([hidden]) {
+.divide-indigo-50 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(238 242 255 / var(--tw-divide-opacity));
 }
@@ -967,8 +921,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none {
@@ -1043,7 +999,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .invoice-table-row div:nth-child(6) {
   margin-left: auto;
   margin-right: auto;
- 
+
   flex: 1 1 0%;
 }
 
@@ -1082,9 +1038,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
 }
 
 .focus\:ring-indigo-300:focus {
@@ -1147,13 +1106,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     column-gap: 0px;
   }
 
-  .md\:space-x-10> :not([hidden])~ :not([hidden]) {
+  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-x-6> :not([hidden])~ :not([hidden]) {
+  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
@@ -1162,7 +1121,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1280px) {
   .xl\:bg-\[url\(\'\.\.\/images\/invoice\.png\'\)\] {
-    background-image: url('../images/invoice.png');
+    background-image: url("../images/invoice.png");
   }
 }
 
@@ -1187,6 +1146,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-:root{
+:root {
   font-family: "Inter", sans-serif;
 }
