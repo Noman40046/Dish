@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import DashBoardCard from "../../components/dashboard-components/DashBoardCard";
-import { LuUsers2 } from "react-icons/lu";
 import { Banknote, Handshake } from "lucide-react";
 
 const UserProfile = () => {
@@ -34,8 +33,8 @@ const UserProfile = () => {
     <div className="p-4 sm:ml-64">
       <div className=" lg:grid-cols-2 lg:grid">
         <div className="mt-6 lg:grid gap-2 md:grid-none md:flex lg:grid-cols-2 w-full lg:justify-between">
-          <DashBoardCard title="Total Transactions" percent="34%" icon={<Handshake/>} num="6000" arrow="arrow_upward" cardimg="../../../public/card_graph.png" />
-          <DashBoardCard title="Total Payments" percent="34%" icon={<Banknote/>} num="67" arrow="arrow_upward" cardimg="../../../public/card_down_graph.png"/>
+          <DashBoardCard title="Total Transactions" percent="34%" icon={<Handshake/>} num="6000" arrow="arrow_upward" cardimg="./card_graph.png" />
+          <DashBoardCard title="Total Payments" percent="34%" icon={<Banknote/>} num="67" arrow="arrow_upward" cardimg="./card_down_graph.png"/>
         </div>
         {/* Clients profile */}
         <div className="max-w-lg mx-auto w-full bg-white border-r border-l h-full overflow-hidden text-center mt-12 p-6">

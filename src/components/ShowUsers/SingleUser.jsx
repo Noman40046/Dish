@@ -12,13 +12,15 @@ const SingleUser = ({ item }) => {
         <td>{item.contact}</td>
         <td>{item.charge}</td>
         <td className="hidden lg:block">
-          <button className="btn btn-sm bg-black text-white">
-            <NavLink to={`/dashboard/userprofile/${item.id}`}>View</NavLink>
-          </button>
-          <button className="btn btn-sm bg-black text-white">
-            <NavLink to={`../edit/${item.id}`}>Edit</NavLink>
-          </button>
-          <button className="btn btn-sm btn-error text-white">Delete</button>
+          <div className="flex gap-2">
+            <button className="btn btn-sm bg-black text-white">
+              <NavLink to={`/dashboard/userprofile/${item.id}`}>View</NavLink>
+            </button>
+            <button className="btn btn-sm bg-black text-white">
+              <NavLink to={`../edit/${item.id}`}>Edit</NavLink>
+            </button>
+            <button className="btn btn-sm btn-error text-white">Delete</button>
+          </div>
         </td>
         <td className="block lg:hidden">
           <div className="dropdown dropdown-end">
