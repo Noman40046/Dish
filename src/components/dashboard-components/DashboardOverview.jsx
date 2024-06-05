@@ -10,7 +10,7 @@ const DashboardOverview = () => {
           <DashBoardCard title="Total users" percent="34%" icon={<LuUsers2 />} num="67" arrow="arrow_upward" cardimg="./card_graph.png"/>
           <DashBoardCard title="Active users" percent="24%" icon={<LuUserCheck2 />} num="6000" arrow="arrow_downward" cardimg="./card_down_graph.png"/>
           <DashBoardCard title="Inactive users" percent="14%" icon={<LuUserX2 />} num="7000" arrow="arrow_upward" cardimg="./card_graph_3.png"/>
-          <DashBoardCard title="Monthly income" percent="35%" icon={<PiMoney />} num="67000৳" arrow="arrow_upward" cardimg="./card_down_graph.png"/>
+          <DashBoardCard title="Monthly income" percent="35%" icon={<PiMoney />} num="67000" arrow="arrow_upward" cardimg="./card_down_graph.png"/>
         </div>
       </div>
     </div>
