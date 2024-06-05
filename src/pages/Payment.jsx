@@ -56,7 +56,9 @@ const Payment = () => {
                   className="btn bg-black text-white cursor-pointer"
                   onClick={handleSearchButtonClick}
                 >
-                  <span className="flex gap-1 justify-center items-center"><Search/> Search</span>
+                  <span className="flex gap-1 justify-center items-center">
+                    <Search /> Search
+                  </span>
                 </div>
               </div>
             </div>
