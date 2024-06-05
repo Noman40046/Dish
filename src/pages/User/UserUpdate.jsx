@@ -129,7 +129,7 @@ const UserUpdate = () => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <Link to={`../userprofile/${student.id}`}>
+                  <Link to={`../dashboard/userprofile/${student.id}`}>
                     <button className="btn mr-2 bg-black hover:bg-gray-600  text-white  px-4 py-2 rounded-lg">
                       Cancel
                     </button>

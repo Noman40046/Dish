@@ -10,9 +10,7 @@ const ShowUser = () => {
 
   useEffect(() => {
     // Fetch user data from the server
-    fetch(
-      "./data/users.json"
-    )
+    fetch("./data/users.json")
       .then((response) => response.json())
       .then((data) => {
         setAllUsersData(data);
@@ -45,26 +43,40 @@ const ShowUser = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <div className="btn bg-black text-white flex" onClick={handleSearch}>
-            <Search />
-              <span >Search</span>
+            <div
+              className="btn bg-black text-white flex"
+              onClick={handleSearch}
+            >
+              <Search />
+              <span>Search</span>
             </div>
           </div>
         </div>
       </div>
-      <div className=" border-b border-t text-sm client-table-row bg-white px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
+{/*       <div className=" border-b border-t text-sm client-table-row bg-white px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
         <div className="text-left">Id</div>
         <div className="text-left">Name</div>
         <div className="text-left hidden lg:block">Contact</div>
         <div className="text-left">Charge</div>
         <div className="text-left">Action</div>
-      </div>
-
-      <div className="bg-white mt-5 rounded-xl text-sm text-black divide-y divide-indigo-50 overflow-x-auto shadow">
-        {/* users Data Show */}
-        {filteredUsers.map((item, index) => (
-          <SingleUser key={index} item={item} />
-        ))}
+      </div> */}
+  
+      <div className="overflow-x-auto">
+        <table className="table table-xs">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Contact</th>
+              <th>Charge</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          {/* users Data Show */}
+          {filteredUsers.map((item, index) => (
+            <SingleUser key={index} item={item} />
+          ))}
+        </table>
       </div>
     </section>
   );
