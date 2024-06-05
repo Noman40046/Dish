@@ -64,7 +64,7 @@ const Payment = () => {
           {/* All payments heading */}
           <div className="border-b border-t rounded-none overflow-visible text-sm client-table-row bg-white px-10 py-4 flex items-start justify-start gap-x-3 font-semibold text-gray-600">
             <div className="text-left w-1/5">Id</div>
-            <div className="text-left w-1/5">User name</div>
+            <div className="text-left w-1/5">Name</div>
             <div className="text-left w-1/5">Date</div>
             <div className="text-left w-1/5">Month</div>
             <div className="text-left w-1/5">Charge</div>
