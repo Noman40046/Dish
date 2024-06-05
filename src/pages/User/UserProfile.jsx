@@ -33,7 +33,7 @@ const UserProfile = () => {
     <div className="p-4 sm:ml-64">
       <div className=" lg:grid-cols-2 lg:grid">
         <div>
-          <div className="mt-6 lg:grid gap-2 md:grid-none md:flex lg:grid-cols-2 w-full lg:justify-between">
+          <div className="lg:grid gap-2 md:grid-none md:flex lg:grid-cols-2 w-full lg:justify-between">
             <DashBoardCard
               title="Total Transactions"
               percent="34%"
@@ -90,7 +90,7 @@ const UserProfile = () => {
         </div>
         {/* Clients profile */}
 
-        <div className="max-w-lg mx-auto w-full bg-white border-r border-l h-full overflow-hidden text-center mt-12 p-6">
+        <div className="max-w-lg mx-auto w-full bg-white border h-full overflow-hidden text-center rounded-xl p-6">
           <img
             src={student.img}
             className="rounded-full w-32 h-32 mx-auto"
