@@ -8,7 +8,7 @@ const AddUser = () => {
           <div className="p-4">
             <div className="mb-4">
               <h6 className="text-xl font-semibold text-black">
-                Edit User Information
+                Add User
               </h6>
             </div>
             <div className="flex flex-wrap -mx-4">
@@ -107,7 +107,7 @@ const AddUser = () => {
                 </button>
               </Link>
               <button className="btn  px-4 py-2  hover:bg-red-400 bg-rose-500  text-white rounded-lg">
-                Update
+                Add
               </button>
             </div>
           </div>
