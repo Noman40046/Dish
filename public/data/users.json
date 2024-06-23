@@ -43,5 +43,41 @@
     "location": "Gaibandha",
     "img": "https://bootdey.com/img/Content/avatar/avatar7.png",
     "charge": 500
+  },
+  {
+    "id": 6,
+    "name": "Shadhin",
+    "contact": "017552324341",
+    "email": "shadhin@gmail.com",
+    "location": "Gaibandha",
+    "img": "https://bootdey.com/img/Content/avatar/avatar7.png",
+    "charge": 500
+  },
+  {
+    "id": 7,
+    "name": "Shadhin",
+    "contact": "017552324341",
+    "email": "shadhin@gmail.com",
+    "location": "Gaibandha",
+    "img": "https://bootdey.com/img/Content/avatar/avatar7.png",
+    "charge": 500
+  },
+  {
+    "id": 8,
+    "name": "Shadhin",
+    "contact": "017552324341",
+    "email": "shadhin@gmail.com",
+    "location": "Gaibandha",
+    "img": "https://bootdey.com/img/Content/avatar/avatar7.png",
+    "charge": 500
+  },
+  {
+    "id": 9,
+    "name": "Shadhin",
+    "contact": "017552324341",
+    "email": "shadhin@gmail.com",
+    "location": "Gaibandha",
+    "img": "https://bootdey.com/img/Content/avatar/avatar7.png",
+    "charge": 500
   }
 ]

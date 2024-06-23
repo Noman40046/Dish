@@ -10,6 +10,17 @@ const Message = () => {
         Send Messege
       </div>
       <form>
+      <div className="flex flex-col w-full text-black text-sm space-y-2 font-semibold text-left">
+            <div className="inline-flex  ">
+              <input
+                className="border pl-4 pr-4 py-3 rounded-lg appearance-none w-full  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300"
+                id="billid"
+                name="billid"
+                type="text"
+                placeholder="Enter Mobile Number"
+              />
+            </div>
+          </div>
         <div className="flex gap-4 flex-col items-start py-2 rounded-lg ">
           <textarea
             id="chat"

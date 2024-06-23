@@ -53,8 +53,8 @@ const ShowUser = () => {
           </div>
         </div>
       </div>
-      <div className="overflow-x-auto">
-        <table className="table table-xs">
+      <div className="">
+        <table className="table">
           <thead>
             <tr>
               <th>Id</th>
