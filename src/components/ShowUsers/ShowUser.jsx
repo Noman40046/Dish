@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SingleUser from "./SingleUser";
 import { Search } from "lucide-react";
 
@@ -20,6 +19,7 @@ const ShowUser = () => {
   }, []);
 
   const handleSearch = () => {
+    console.log("Search term:", searchTerm); // Log the search term
     const filtered = allUsersData.filter((user) =>
       user.id.toString().includes(searchTerm)
     );

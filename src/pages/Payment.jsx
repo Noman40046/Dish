@@ -1,20 +1,19 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from "react";
+import{ useEffect, useState } from "react";
 import PaymentSearch from "../components/payment-components/PaymentSearch";
 import AllPayments from "../components/payment-components/AllPayments";
 import { Search } from "lucide-react";
 
 const Payment = () => {
-  const [allUsersData, setAllUsersData] = useState([]);
+  const [allPaymentsData, setAllPaymentsData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredUsersData, setFilteredUsersData] = useState([]);
+  const [filteredPaymentsData, setFilteredPaymentsData] = useState([]);
 
   useEffect(() => {
     fetch("./data/payments.json")
       .then((response) => response.json())
       .then((data) => {
-        setAllUsersData(data);
-        setFilteredUsersData(data);
+        setAllPaymentsData(data);
+        setFilteredPaymentsData(data);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -24,10 +23,11 @@ const Payment = () => {
   };
 
   const handleSearchButtonClick = () => {
-    const filteredData = allUsersData.filter((user) =>
-      user.id.toString().includes(searchTerm)
+    console.log("Search term:", searchTerm); // Log the search term
+    const filteredData = allPaymentsData.filter((payment) =>
+      payment.id.toString().includes(searchTerm)
     );
-    setFilteredUsersData(filteredData);
+    setFilteredPaymentsData(filteredData);
   };
 
   return (
@@ -76,8 +76,8 @@ const Payment = () => {
 
           <div className="bg-white mt-5 rounded-xl text-sm text-black divide-y divide-indigo-50 overflow-x-auto shadow">
             {/* ----All Payments---- */}
-            {filteredUsersData.map((item) => (
-              <AllPayments key={item.id} item={item} />
+            {filteredPaymentsData.map((payment) => (
+              <AllPayments key={payment.id} item={payment} />
             ))}
           </div>
         </section>
