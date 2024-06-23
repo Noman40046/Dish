@@ -52,7 +52,7 @@ const UserProfile = () => {
             />
           </div>
           {/* Table start */}
-          <div className="overflow-x-auto mt-8 border p-8 rounded-xl">
+          <div className="overflow-x-auto mt-8 mb-4 border p-8 rounded-xl">
             <div className="mb-4">
               <div className=" text-2xl text-black font-bold">
                 Transactions
