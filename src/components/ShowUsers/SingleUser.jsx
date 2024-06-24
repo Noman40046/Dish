@@ -9,8 +9,8 @@ const SingleUser = ({ item }) => {
       <tr>
         <th>{item.id}</th>
         <td>{item.name}</td>
-        <td>{item.contact}</td>
-        <td>{item.charge}</td>
+        <td>{item.phone}</td>
+        <td>{item.bill}</td>
         <td className="hidden lg:block">
           <div className="flex gap-2">
             <NavLink to={`/dashboard/userprofile/${item.id}`}>

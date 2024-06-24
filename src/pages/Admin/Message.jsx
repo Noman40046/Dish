@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import UserLoad from "../components/sendmessege/UserLoad";
+import UserLoad from "../../components/sendmessege/UserLoad";
 import { SendHorizontal } from "lucide-react";
 
 const Message = () => {

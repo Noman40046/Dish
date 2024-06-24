@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import ShowUser from "../components/ShowUsers/ShowUser";
-import DashboardOverview from "../components/dashboard-components/DashboardOverview";
-import Revenue from "../components/dashboard-components/Revenue";
+import ShowUser from "../../components/ShowUsers/ShowUser";
+import DashboardOverview from "../../components/dashboard-components/DashboardOverview";
+import Revenue from "../../components/dashboard-components/Revenue";
 
 const Dashboard = () => {
   return (

@@ -1,6 +1,6 @@
 import{ useEffect, useState } from "react";
-import PaymentSearch from "../components/payment-components/PaymentSearch";
-import AllPayments from "../components/payment-components/AllPayments";
+import PaymentSearch from "../../components/payment-components/PaymentSearch";
+import AllPayments from "../../components/payment-components/AllPayments";
 import { Search } from "lucide-react";
 
 const Payment = () => {

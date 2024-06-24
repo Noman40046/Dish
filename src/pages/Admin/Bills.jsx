@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import ShowUser from "../components/ShowUsers/ShowUser";
-import SetBIll from "../components/billcomponents/SetBIll";
+import ShowUser from "../../components/ShowUsers/ShowUser";
+import SetBIll from "../../components/billcomponents/SetBIll";
 
 const Bills = () => {
 

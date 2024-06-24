@@ -1,30 +1,26 @@
 import { useEffect, useState } from "react";
 import SingleUser from "./SingleUser";
 import { Search } from "lucide-react";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 const ShowUser = () => {
   const [allUsersData, setAllUsersData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredUsers, setFilteredUsers] = useState([]);
+  // const [filteredUsers, setFilteredUsers] = useState([]);
+  const axiosSecure= useAxiosSecure()
 
   useEffect(() => {
-    // Fetch user data from the server
-    fetch("./data/users.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setAllUsersData(data);
-        setFilteredUsers(data);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+   axiosSecure.get('/users')
+   .then(result=> {
+   // console.log(result.data.users)
+    setAllUsersData(result.data.users)
+   })
+   .catch(err=> {
+    console.log(err)
+   })
   }, []);
+console.log(allUsersData)
 
-  const handleSearch = () => {
-    console.log("Search term:", searchTerm); // Log the search term
-    const filtered = allUsersData.filter((user) =>
-      user.id.toString().includes(searchTerm)
-    );
-    setFilteredUsers(filtered);
-  };
 
   return (
     <section className="border rounded-lg">
@@ -45,7 +41,7 @@ const ShowUser = () => {
             </div>
             <div
               className="btn bg-black text-white flex"
-              onClick={handleSearch}
+              // onClick={handleSearch}
             >
               <Search />
               <span>Search</span>
@@ -65,7 +61,7 @@ const ShowUser = () => {
             </tr>
           </thead>
           {/* users Data Show */}
-          {filteredUsers.map((item, index) => (
+          {allUsersData.map((item, index) => (
             <SingleUser key={index} item={item} />
           ))}
         </table>

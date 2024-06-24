@@ -3,15 +3,18 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from "./MainLayout";
-import UserLogin from "./pages/UserLogin";
-import Dashboard from "./pages/Dashboard";
+
 import { Toaster } from "react-hot-toast";
-import Payment from "./pages/Payment";
-import Message from "./pages/Message";
+import Dashboard from "./pages/Admin/Dashboard";
+import Bills from "./pages/Admin/Bills";
+import Message from "./pages/Admin/Message";
+import Payment from "./pages/Admin/Payment";
+import UserLogin from "./pages/Admin/UserLogin";
 import UserUpdate from "./pages/User/UserUpdate";
 import UserProfile from "./pages/User/UserProfile";
-import Bills from "./pages/Bills";
+
 import AddUser from "./pages/User/AddUser";
+
 
 const router = createBrowserRouter([
   {
@@ -19,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/dashboard",
-        element: <Dashboard />,
+        element: <Dashboard/>
       },
       {
         path: "bills",
