@@ -3,11 +3,12 @@ import DashBoardCard from "./DashBoardCard";
 import { PiMoney } from "react-icons/pi";
 import { useEffect, useState } from "react";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+
 const DashboardOverview = () => {
-  const [TotalUser, setTotalUser] = useState(null);
-  const [ActiveUser, setActiveUser] = useState(null);
-  const [InactiveveUser, setInactiveUser] = useState(null);
-  const [MonthlyIncome, setMonthlyIncome] = useState(null);
+  const [TotalUser, setTotalUser] = useState(0);
+  const [ActiveUser, setActiveUser] = useState(0);
+  const [InactiveveUser, setInactiveUser] = useState(0);
+  const [MonthlyIncome, setMonthlyIncome] = useState(0);
   const axiosSecure = useAxiosSecure();
 
   useEffect(() => {
@@ -22,12 +23,14 @@ const DashboardOverview = () => {
       })
       .catch((err) => {
         console.log(err);
+        // Handle errors or set default values if necessary
       });
-  });
-  console.log(TotalUser)
-  if (!TotalUser && !ActiveUser && !InactiveveUser) {
+  }, [axiosSecure]); // Ensure useEffect runs only once after component mounts
+
+  if (TotalUser === null || ActiveUser === null || InactiveveUser === null) {
     return <div>Loading...</div>; // Show a loading state while user data is being fetched
   }
+
   return (
     <div>
       <div className=" mb-4 mt-4  rounded-xl pb-4 relative bg-no-repeat bg-right bg-contain ">
