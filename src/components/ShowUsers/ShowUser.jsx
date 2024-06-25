@@ -6,33 +6,57 @@ import { Search } from "lucide-react";
 const ShowUser = () => {
   const [allUsersData, setAllUsersData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1); // Track current page
+  const [totalPages, setTotalPages] = useState(1); // Track total pages
+  const [isLoading, setIsLoading] = useState(false); // Track loading state
   const axiosSecure = useAxiosSecure();
 
   useEffect(() => {
     // Function to fetch all users initially
     const fetchAllUsers = async () => {
       try {
-        const response = await axiosSecure.get("/users");
+        setIsLoading(true);
+        const response = await axiosSecure.get(
+          `/users-with-search?page=${currentPage}&limit=10&search=${searchTerm}`
+        );
         setAllUsersData(response.data.users);
+        setTotalPages(response.data.totalPages);
+        setIsLoading(false);
       } catch (error) {
         console.error("Error fetching users:", error);
+        setIsLoading(false);
       }
     };
 
     // Fetch all users initially when component mounts
     fetchAllUsers();
-  }, [axiosSecure]); // Only fetch all users when axiosSecure changes (if necessary)
+  }, [axiosSecure, currentPage]); // Fetch users whenever currentPage changes or axiosSecure changes
 
   const handleSearchClick = async () => {
     try {
-      if (searchTerm.trim() !== "") {
-        const response = await axiosSecure.get(
-          `/users-with-search?page=1&limit=10&search=${searchTerm}`
-        );
-        setAllUsersData(response.data.users);
-      }
+      setIsLoading(true);
+      const response = await axiosSecure.get(
+        `/users-with-search?page=1&limit=10&search=${searchTerm}`
+      );
+      setAllUsersData(response.data.users);
+      setTotalPages(response.data.totalPages);
+      setCurrentPage(1); // Reset current page to 1 after search
+      setIsLoading(false);
     } catch (error) {
       console.error("Error fetching users:", error);
+      setIsLoading(false);
+    }
+  };
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
     }
   };
 
@@ -79,6 +103,15 @@ const ShowUser = () => {
             <SingleUser key={index} item={item} />
           ))}
         </table>
+      </div>
+      <div className="join pagination m-4">
+        <button className="join-item btn" onClick={handlePreviousPage} disabled={currentPage === 1 || isLoading}>
+          « Previous
+        </button>
+        <button className="join-item btn">{`Page ${currentPage}`}</button>
+        <button className="join-item btn" onClick={handleNextPage} disabled={currentPage === totalPages || isLoading}>
+          Next »
+        </button>
       </div>
     </section>
   );

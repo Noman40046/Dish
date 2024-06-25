@@ -89,10 +89,10 @@ const UserProfile = () => {
         {/* Clients profile */}
         <div className="max-w-lg mx-auto w-full bg-white border h-full overflow-hidden text-center rounded-xl p-6">
           <img
-            src={user.photoURL}
+            src="https://i.postimg.cc/g0Y988sm/user-min.png"
             className="rounded-full w-32 h-32 mx-auto border"
             alt="profile"
-          /> 
+          />
           <div className="text-left mt-6 text-sm">
             <div className="text-gray-600 flex justify-between items-center text-left border-b px-2 mt-2 pb-1">
               <div className="font-semibold">Id :</div>

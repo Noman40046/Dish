@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { useForm } from "react-hook-form";
@@ -7,7 +6,6 @@ import toast from "react-hot-toast";
 const AddUser = () => {
   const axiosSecure = useAxiosSecure();
 
-  const [selectedImage, setSelectedImage] = useState(null);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     data = {...data, bill: parseInt(data.bill)}
@@ -19,17 +17,6 @@ const AddUser = () => {
     });
   };
 
-  // Function to handle file selection
-  const handleFileSelect = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        setSelectedImage(reader.result);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
 
   return (
     <div className="p-4 sm:ml-64">
@@ -116,39 +103,6 @@ const AddUser = () => {
                       {...register("location")}
                       placeholder="Location"
                     />
-                  </div>
-                </div>
-
-                <div className="w-full md:w-1/2 px-4 mb-4">
-                  <div className="form-group">
-                    <div className="">
-                      <label htmlFor="drop-zone">
-                        <div className="h-[100px] flex flex-col items-center justify-center border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50">
-                          <input
-                            className="hidden"
-                            id="drop-zone"
-                            type="file"
-                            accept="image/*"
-                            onChange={handleFileSelect}
-                          />
-                          {selectedImage ? (
-                            <img
-                              id="logo"
-                              className="h-[70px]"
-                              src={selectedImage}
-                              alt="Selected"
-                            />
-                          ) : (
-                            <img
-                              id="logo"
-                              className="h-[70px]"
-                              src="https://i.postimg.cc/rF77ZXQj/image.png"
-                              alt="Default"
-                            />
-                          )}
-                        </div>
-                      </label>
-                    </div>
                   </div>
                 </div>
               </div>

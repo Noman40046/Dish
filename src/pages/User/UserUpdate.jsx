@@ -9,7 +9,6 @@ const UserUpdate = () => {
   const axiosSecure = useAxiosSecure();
   const { id } = useParams();
   const [user, setUser] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(null);
   const { register, handleSubmit, setValue } = useForm();
 
   useEffect(() => {
@@ -44,17 +43,6 @@ const UserUpdate = () => {
         toast.error("Failed to update user");
         console.error("Error updating user:", error); // Log update error
       });
-  };
-
-  const handleFileSelect = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        setSelectedImage(reader.result);
-      };
-      reader.readAsDataURL(file);
-    }
   };
 
   if (!user) {
@@ -154,38 +142,6 @@ const UserUpdate = () => {
                         />
                       </div>
                     </div>
-                    <div className="w-full md:w-1/2 px-4 mb-4">
-                      <div className="form-group">
-                        <div className="">
-                          <label htmlFor="drop-zone">
-                            <div className="h-[100px] flex flex-col items-center justify-center border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50">
-                              <input
-                                className="hidden"
-                                id="drop-zone"
-                                type="file"
-                                accept="image/*"
-                                onChange={handleFileSelect}
-                              />
-                              {selectedImage ? (
-                                <img
-                                  id="logo"
-                                  className="h-[70px]"
-                                  src={selectedImage}
-                                  alt="Selected"
-                                />
-                              ) : (
-                                <img
-                                  id="logo"
-                                  className="h-[70px]"
-                                  src="https://i.postimg.cc/rF77ZXQj/image.png"
-                                  alt="Default"
-                                />
-                              )}
-                            </div>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="text-right">
                     <Link to="/dashboard">
@@ -209,7 +165,7 @@ const UserUpdate = () => {
 
           <div className="max-w-lg mx-auto w-full bg-white border h-full overflow-hidden text-center rounded-xl p-6">
             <img
-              src={user.photoURL}
+              src="https://i.postimg.cc/g0Y988sm/user-min.png"
               className="rounded-full w-32 h-32 mx-auto border"
               alt="profile"
             />
