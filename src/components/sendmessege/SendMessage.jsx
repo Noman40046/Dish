@@ -16,8 +16,8 @@ const SendMessage = ({ item }) => {
         </div>
         <div className="text-left ">{item.id}</div>
         <div className="text-left">{item.name}</div>
-        <div className="text-left">{item.contact}</div>
-        <div className="text-left">{item.charge} ৳</div>
+        <div className="text-left">{item.phone}</div>
+        <div className="text-left">{item.bill} ৳</div>
         {/*      <div className="text-left">
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button">

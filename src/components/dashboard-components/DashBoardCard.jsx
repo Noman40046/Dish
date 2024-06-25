@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import SimpleCountUp from "./Counter";
 
 const DashBoardCard = ({ title, icon, num, percent, arrow, cardimg }) => {
   return (
@@ -16,7 +15,7 @@ const DashBoardCard = ({ title, icon, num, percent, arrow, cardimg }) => {
 
             <div className="card_bottom flex justify-between items-end w-full ">
               <div className="flex flex-col gap-2">
-                <div className="client-number text-xl font-bold"> <SimpleCountUp end={num}/></div>
+                <div className="client-number text-xl font-bold"> {num}</div>
                 <div className="text-sm text-green-700 gap-2 flex">
                   <span className="material-symbols-outlined text-sm w-6 justify-center text-center flex items-center h-6 p-1 rounded-full bg-green-300">
                     {arrow} {/* arrow_upward */}

@@ -1,26 +1,40 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import SingleUser from "./SingleUser";
-import { Search } from "lucide-react";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+import { Search } from "lucide-react";
 
 const ShowUser = () => {
   const [allUsersData, setAllUsersData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  // const [filteredUsers, setFilteredUsers] = useState([]);
-  const axiosSecure= useAxiosSecure()
+  const axiosSecure = useAxiosSecure();
 
   useEffect(() => {
-   axiosSecure.get('/users')
-   .then(result=> {
-   // console.log(result.data.users)
-    setAllUsersData(result.data.users)
-   })
-   .catch(err=> {
-    console.log(err)
-   })
-  }, []);
-console.log(allUsersData)
+    // Function to fetch all users initially
+    const fetchAllUsers = async () => {
+      try {
+        const response = await axiosSecure.get("/users");
+        setAllUsersData(response.data.users);
+      } catch (error) {
+        console.error("Error fetching users:", error);
+      }
+    };
 
+    // Fetch all users initially when component mounts
+    fetchAllUsers();
+  }, [axiosSecure]); // Only fetch all users when axiosSecure changes (if necessary)
+
+  const handleSearchClick = async () => {
+    try {
+      if (searchTerm.trim() !== "") {
+        const response = await axiosSecure.get(
+          `/users-with-search?page=1&limit=10&search=${searchTerm}`
+        );
+        setAllUsersData(response.data.users);
+      }
+    } catch (error) {
+      console.error("Error fetching users:", error);
+    }
+  };
 
   return (
     <section className="border rounded-lg">
@@ -39,13 +53,13 @@ console.log(allUsersData)
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <div
+            <button
+              onClick={handleSearchClick}
               className="btn bg-black text-white flex"
-              // onClick={handleSearch}
             >
               <Search />
               <span>Search</span>
-            </div>
+            </button>
           </div>
         </div>
       </div>
